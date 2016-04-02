@@ -19,7 +19,11 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            MainForm facebookFeaturesForm = new MainForm();
+            if (facebookFeaturesForm.LoggedIn)
+            {
+                Application.Run(facebookFeaturesForm);
+            }
         }
     }
 }

@@ -28,80 +28,140 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ButtonShowLikedPages = new System.Windows.Forms.Button();
-            this.ListBoxLikedPages = new System.Windows.Forms.ListBox();
-            this.LabelLikedPages = new System.Windows.Forms.Label();
+            this.buttonShowLikedPages = new System.Windows.Forms.Button();
+            this.listBoxLikedPages = new System.Windows.Forms.ListBox();
+            this.labelLikedPages = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.TextBoxDaysToInactive = new System.Windows.Forms.TextBox();
+            this.textBoxDaysToInactive = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBoxProfilePicture = new System.Windows.Forms.PictureBox();
+            this.buttonProfilePicture = new System.Windows.Forms.Button();
+            this.buttonPrevPicture = new System.Windows.Forms.Button();
+            this.buttonNextPicture = new System.Windows.Forms.Button();
+            this.labelProfilePictureDate = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfilePicture)).BeginInit();
             this.SuspendLayout();
             // 
-            // ButtonShowLikedPages
+            // buttonShowLikedPages
             // 
-            this.ButtonShowLikedPages.Location = new System.Drawing.Point(13, 13);
-            this.ButtonShowLikedPages.Name = "ButtonShowLikedPages";
-            this.ButtonShowLikedPages.Size = new System.Drawing.Size(169, 23);
-            this.ButtonShowLikedPages.TabIndex = 0;
-            this.ButtonShowLikedPages.Text = "Show My Inactive Liked Pages";
-            this.ButtonShowLikedPages.UseVisualStyleBackColor = true;
-            this.ButtonShowLikedPages.Click += new System.EventHandler(this.button1_Click);
+            this.buttonShowLikedPages.Location = new System.Drawing.Point(238, 13);
+            this.buttonShowLikedPages.Name = "buttonShowLikedPages";
+            this.buttonShowLikedPages.Size = new System.Drawing.Size(169, 23);
+            this.buttonShowLikedPages.TabIndex = 0;
+            this.buttonShowLikedPages.Text = "Show My Inactive Liked Pages";
+            this.buttonShowLikedPages.UseVisualStyleBackColor = true;
+            this.buttonShowLikedPages.Click += new System.EventHandler(this.buttonButtonShowLikedPages_Click);
             // 
-            // ListBoxLikedPages
+            // listBoxLikedPages
             // 
-            this.ListBoxLikedPages.FormattingEnabled = true;
-            this.ListBoxLikedPages.Location = new System.Drawing.Point(12, 80);
-            this.ListBoxLikedPages.Name = "ListBoxLikedPages";
-            this.ListBoxLikedPages.Size = new System.Drawing.Size(397, 342);
-            this.ListBoxLikedPages.TabIndex = 1;
+            this.listBoxLikedPages.FormattingEnabled = true;
+            this.listBoxLikedPages.Location = new System.Drawing.Point(239, 80);
+            this.listBoxLikedPages.Name = "listBoxLikedPages";
+            this.listBoxLikedPages.Size = new System.Drawing.Size(382, 277);
+            this.listBoxLikedPages.TabIndex = 1;
             // 
-            // LabelLikedPages
+            // labelLikedPages
             // 
-            this.LabelLikedPages.AutoSize = true;
-            this.LabelLikedPages.Location = new System.Drawing.Point(10, 64);
-            this.LabelLikedPages.Name = "LabelLikedPages";
-            this.LabelLikedPages.Size = new System.Drawing.Size(316, 13);
-            this.LabelLikedPages.TabIndex = 2;
-            this.LabelLikedPages.Text = "Press the button to view the inactive pages you like on facebook.";
+            this.labelLikedPages.AutoSize = true;
+            this.labelLikedPages.Location = new System.Drawing.Point(237, 64);
+            this.labelLikedPages.Name = "labelLikedPages";
+            this.labelLikedPages.Size = new System.Drawing.Size(316, 13);
+            this.labelLikedPages.TabIndex = 2;
+            this.labelLikedPages.Text = "Press the button to view the inactive pages you like on facebook.";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 43);
+            this.label1.Location = new System.Drawing.Point(238, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(328, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "A page will be counted as inactive if there aren\'t posts within the last";
             // 
-            // TextBoxDaysToInactive
+            // textBoxDaysToInactive
             // 
-            this.TextBoxDaysToInactive.Location = new System.Drawing.Point(342, 40);
-            this.TextBoxDaysToInactive.Name = "TextBoxDaysToInactive";
-            this.TextBoxDaysToInactive.Size = new System.Drawing.Size(21, 20);
-            this.TextBoxDaysToInactive.TabIndex = 4;
-            this.TextBoxDaysToInactive.Text = "7";
+            this.textBoxDaysToInactive.Location = new System.Drawing.Point(567, 40);
+            this.textBoxDaysToInactive.Name = "textBoxDaysToInactive";
+            this.textBoxDaysToInactive.Size = new System.Drawing.Size(21, 20);
+            this.textBoxDaysToInactive.TabIndex = 4;
+            this.textBoxDaysToInactive.Text = "7";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(364, 43);
+            this.label2.Location = new System.Drawing.Point(589, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "days.";
             // 
+            // pictureBoxProfilePicture
+            // 
+            this.pictureBoxProfilePicture.Location = new System.Drawing.Point(23, 79);
+            this.pictureBoxProfilePicture.Name = "pictureBoxProfilePicture";
+            this.pictureBoxProfilePicture.Size = new System.Drawing.Size(187, 166);
+            this.pictureBoxProfilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxProfilePicture.TabIndex = 6;
+            this.pictureBoxProfilePicture.TabStop = false;
+            // 
+            // buttonProfilePicture
+            // 
+            this.buttonProfilePicture.Location = new System.Drawing.Point(23, 14);
+            this.buttonProfilePicture.Name = "buttonProfilePicture";
+            this.buttonProfilePicture.Size = new System.Drawing.Size(156, 23);
+            this.buttonProfilePicture.TabIndex = 8;
+            this.buttonProfilePicture.Text = "Show My Profile Picture";
+            this.buttonProfilePicture.UseVisualStyleBackColor = true;
+            this.buttonProfilePicture.Click += new System.EventHandler(this.buttonProfilePicture_Click);
+            // 
+            // buttonPrevPicture
+            // 
+            this.buttonPrevPicture.Location = new System.Drawing.Point(24, 251);
+            this.buttonPrevPicture.Name = "buttonPrevPicture";
+            this.buttonPrevPicture.Size = new System.Drawing.Size(56, 23);
+            this.buttonPrevPicture.TabIndex = 9;
+            this.buttonPrevPicture.Text = "<";
+            this.buttonPrevPicture.UseVisualStyleBackColor = true;
+            this.buttonPrevPicture.Click += new System.EventHandler(this.buttonPrevPicture_Click);
+            // 
+            // buttonNextPicture
+            // 
+            this.buttonNextPicture.Location = new System.Drawing.Point(154, 251);
+            this.buttonNextPicture.Name = "buttonNextPicture";
+            this.buttonNextPicture.Size = new System.Drawing.Size(56, 23);
+            this.buttonNextPicture.TabIndex = 10;
+            this.buttonNextPicture.Text = ">";
+            this.buttonNextPicture.UseVisualStyleBackColor = true;
+            this.buttonNextPicture.Click += new System.EventHandler(this.buttonNextPicture_Click);
+            // 
+            // labelProfilePictureDate
+            // 
+            this.labelProfilePictureDate.AutoSize = true;
+            this.labelProfilePictureDate.Location = new System.Drawing.Point(24, 60);
+            this.labelProfilePictureDate.Name = "labelProfilePictureDate";
+            this.labelProfilePictureDate.Size = new System.Drawing.Size(104, 13);
+            this.labelProfilePictureDate.TabIndex = 11;
+            this.labelProfilePictureDate.Text = "Latest Profile Picture";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(421, 429);
+            this.ClientSize = new System.Drawing.Size(631, 369);
+            this.Controls.Add(this.labelProfilePictureDate);
+            this.Controls.Add(this.buttonNextPicture);
+            this.Controls.Add(this.buttonPrevPicture);
+            this.Controls.Add(this.buttonProfilePicture);
+            this.Controls.Add(this.pictureBoxProfilePicture);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.TextBoxDaysToInactive);
+            this.Controls.Add(this.textBoxDaysToInactive);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.LabelLikedPages);
-            this.Controls.Add(this.ListBoxLikedPages);
-            this.Controls.Add(this.ButtonShowLikedPages);
+            this.Controls.Add(this.labelLikedPages);
+            this.Controls.Add(this.listBoxLikedPages);
+            this.Controls.Add(this.buttonShowLikedPages);
             this.Name = "MainForm";
-            this.Text = "s";
+            this.Text = "Facebook Form Application";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfilePicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,12 +169,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Button ButtonShowLikedPages;
-        private System.Windows.Forms.ListBox ListBoxLikedPages;
-        private System.Windows.Forms.Label LabelLikedPages;
+        private System.Windows.Forms.Button buttonShowLikedPages;
+        private System.Windows.Forms.ListBox listBoxLikedPages;
+        private System.Windows.Forms.Label labelLikedPages;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TextBoxDaysToInactive;
+        private System.Windows.Forms.TextBox textBoxDaysToInactive;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBoxProfilePicture;
+        private System.Windows.Forms.Button buttonProfilePicture;
+        private System.Windows.Forms.Button buttonPrevPicture;
+        private System.Windows.Forms.Button buttonNextPicture;
+        private System.Windows.Forms.Label labelProfilePictureDate;
     }
 }
 
