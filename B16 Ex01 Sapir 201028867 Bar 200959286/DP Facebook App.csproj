@@ -34,10 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Facebook">
-      <HintPath>..\..\01_FB01_BasicFacebookFeatures.V6.8.0.14\FBApi\Facebook.dll</HintPath>
+      <HintPath>.\Facebook.dll</HintPath>
     </Reference>
     <Reference Include="FbGraphApiWrapper">
-      <HintPath>..\..\01_FB01_BasicFacebookFeatures.V6.8.0.14\FBApi\FbGraphApiWrapper.dll</HintPath>
+      <HintPath>.\FbGraphApiWrapper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,6 +51,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ColorMatrixUtilities.cs" />
+    <Compile Include="Filter.cs" />
+    <Compile Include="FiltersManager.cs" />
+    <Compile Include="FormImageEditing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImageEditing.Designer.cs">
+      <DependentUpon>FormImageEditing.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +68,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormImageEditing.resx">
+      <DependentUpon>FormImageEditing.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +96,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\no-photo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

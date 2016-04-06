@@ -39,6 +39,7 @@
             this.buttonPrevPicture = new System.Windows.Forms.Button();
             this.buttonNextPicture = new System.Windows.Forms.Button();
             this.labelProfilePictureDate = new System.Windows.Forms.Label();
+            this.buttonEditImage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfilePicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -143,11 +144,22 @@
             this.labelProfilePictureDate.TabIndex = 11;
             this.labelProfilePictureDate.Text = "Latest Profile Picture";
             // 
+            // buttonEditImage
+            // 
+            this.buttonEditImage.Location = new System.Drawing.Point(86, 251);
+            this.buttonEditImage.Name = "buttonEditImage";
+            this.buttonEditImage.Size = new System.Drawing.Size(62, 23);
+            this.buttonEditImage.TabIndex = 12;
+            this.buttonEditImage.Text = "Edit Image";
+            this.buttonEditImage.UseVisualStyleBackColor = true;
+            this.buttonEditImage.Click += new System.EventHandler(this.buttonEditImage_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(631, 369);
+            this.Controls.Add(this.buttonEditImage);
             this.Controls.Add(this.labelProfilePictureDate);
             this.Controls.Add(this.buttonNextPicture);
             this.Controls.Add(this.buttonPrevPicture);
@@ -180,6 +192,7 @@
         private System.Windows.Forms.Button buttonPrevPicture;
         private System.Windows.Forms.Button buttonNextPicture;
         private System.Windows.Forms.Label labelProfilePictureDate;
+        private System.Windows.Forms.Button buttonEditImage;
     }
 }
 
