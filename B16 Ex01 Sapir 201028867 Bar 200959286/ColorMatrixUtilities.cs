@@ -21,15 +21,16 @@
             ColorMatrix satBrightContrMatrix = GetBrightnessSaturationContrastMatrix(i_SaturationValue, i_BrightnessValue, i_ContrastValue);
             ColorMatrix rgbMatrix = GetRedGreenBlueMatrix(i_RedValue, i_GreenValue, i_BlueValue, i_Range);
 
+            // multiply the matrix and send as result
             return MultiplyColorMatrices(satBrightContrMatrix, rgbMatrix);
         }
 
+        // get pixel matrix with the given slider values of brightness saturation contrast
         public static ColorMatrix GetBrightnessSaturationContrastMatrix(
             float i_SaturationValue,
             float i_BrightnessValue,
             float i_ContrastValue)
         {
-            // TODO: add slider-range values as parameteres
             float saturation = (i_SaturationValue / 5f) + 1;
             float contrast = (i_ContrastValue / 5f) + 1;
             float brightness = ((i_BrightnessValue + 10) / 10f) - 1;
@@ -52,6 +53,7 @@
             return resultMatrix;
         }
 
+        // get pixel matrix with the given slider values of red green blue
         public static ColorMatrix GetRedGreenBlueMatrix(
             float i_RedValue,
             float i_GreenValue,
@@ -76,13 +78,15 @@
 
         public static ColorMatrix MultiplyColorMatrices(ColorMatrix i_Matrix1, ColorMatrix i_Matrix2)
         {
+            byte k_ColorMatrixSize = 5;
+
             ColorMatrix newMatrix = new ColorMatrix();
             newMatrix.Matrix00 = newMatrix.Matrix11 = newMatrix.Matrix22 = newMatrix.Matrix33 = newMatrix.Matrix44 = 0;
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < k_ColorMatrixSize; i++)
             {
-                for (int j = 0; j < 5; j++)
+                for (int j = 0; j < k_ColorMatrixSize; j++)
                 {
-                    for (int k = 0; k < 5; k++)
+                    for (int k = 0; k < k_ColorMatrixSize; k++)
                     {
                         newMatrix[i, j] += i_Matrix1[i, k] * i_Matrix2[k, j];
                     }
@@ -94,12 +98,14 @@
 
         public static Bitmap AdjustImage(ColorMatrix i_NewColorMatrix, Image i_ImageToAdjust)
         {
+            // prepare new bitmap and ImageAttributes
             ImageAttributes imageAttributes = new ImageAttributes();
             Image sourceImage = i_ImageToAdjust;
             Bitmap sourceBitmap = new Bitmap(sourceImage);
             imageAttributes.SetColorMatrix(i_NewColorMatrix, ColorMatrixFlag.Default, ColorAdjustType.Bitmap);
             Bitmap result = new Bitmap(sourceBitmap.Width, sourceBitmap.Height);
 
+            // create new bitmap with the given photo and apply filter
             using (Graphics graphics = Graphics.FromImage(result))
             {
                 graphics.DrawImage(
@@ -112,7 +118,7 @@
                     GraphicsUnit.Pixel,
                     imageAttributes);
 
-                // Dispose
+                // dispose
                 sourceBitmap.Dispose();
                 graphics.Dispose();
             }

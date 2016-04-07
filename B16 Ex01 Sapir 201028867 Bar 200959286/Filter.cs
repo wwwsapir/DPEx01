@@ -2,6 +2,7 @@
 {
     using System.Drawing.Imaging;
 
+    // System.Drawing.Imaging.ColorMatrix Wrapper
     public class Filter
     {
         public ColorMatrix PixelFilter { get; set; }

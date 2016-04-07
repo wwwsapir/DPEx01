@@ -7,7 +7,6 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
 {
     using System.Drawing.Imaging;
     using System.IO;
-
     using FacebookWrapper.ObjectModel;
 
     public partial class FormImageEditing : Form
@@ -21,8 +20,9 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
         public FormImageEditing(Image i_ImageToEdit, User i_LoggedInUser)
         {
             InitializeComponent();
-
             LoggedInUser = i_LoggedInUser;
+
+            // check if image was given
             if (i_ImageToEdit != null)
             {
                 CurrentImage = i_ImageToEdit;
@@ -30,6 +30,7 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
             }
             else
             {
+                // show no-image icon and disable appropriate controls
                 this.CurrentImage = new Bitmap(Resources.no_photo);
                 this.listBoxUserFilters.Enabled = false;
                 this.disableFilterControls();
@@ -83,6 +84,7 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
 
         private void readjustImageAndShow()
         {
+            // get the right filter with given sliders values
             ColorMatrix filter = ColorMatrixUtilities.GetColorMatrixWithAllFilters(
                 this.trackBarSaturation.Value,
                 this.trackBarBrightness.Value,
@@ -92,6 +94,7 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
                 this.trackBarBlue.Value,
                 sr_ValueRange);
 
+            // Adjust image
             Bitmap filteredImage = ColorMatrixUtilities.AdjustImage(filter, this.CurrentImage);
             this.pictureBoxFilteredPicture.Image = filteredImage;
             this.pictureBoxFilteredPicture.Show();
@@ -141,6 +144,7 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
             ColorMatrix chosenFilter = FiltersManager.GetFiltersList()[chosenIndex].PixelFilter;
             this.pictureBoxFilteredPicture.Image = ColorMatrixUtilities.AdjustImage(chosenFilter, this.CurrentImage);
 
+            // if the identity filter was selected
             if (chosenIndex  != 0)
             {
                 this.textBoxNewFilterName.Text = string.Empty;
@@ -187,6 +191,7 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
         {
             if (this.textBoxNewFilterName.Text != string.Empty)
             {
+                // create filter
                 Filter newFilter =
                 new Filter(
                     ColorMatrixUtilities.GetColorMatrixWithAllFilters(
@@ -200,6 +205,7 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
                     this.textBoxNewFilterName.Text);
                 this.textBoxNewFilterName.Text = string.Empty;
 
+                // add filter to list
                 FiltersManager.GetFiltersList().Add(newFilter);
                 this.loadFiltersToListBox();
             }

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="3194ccad-2adb-43d6-98d6-6853c106c90a"
   name="B16_Ex01_Sapir_201028867_Bar_200959286"
@@ -233,7 +233,20 @@
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="18a576d5-fa08-4c17-8747-22a31a53db1f"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bf980619-1b94-4e07-9a90-201286eafb37"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -272,7 +285,20 @@
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="878f7462-0f0f-4962-b54f-8b3c28ff4e98"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="cdcf7ff7-12b8-494d-9f71-db4f362e3051"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -853,73 +879,6 @@
             </type_NamedElement>
           </property>
           <property
-            Id="dd36b6f6-b3fe-46f1-a4a7-fb212223e8fb"
-            name="components"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="85e86175-e57d-4ca8-8e94-1b93c465c11a"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3Dcomponents"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="5e3a11a4-5493-4821-a7fa-c73fd7eb57c1"
-                name="field"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="18ae8880-abf0-4f0b-9922-c96b3ac0112c">
-                    <propertyInstance
-                      Id="f5299f81-0eee-460a-971b-1f1298a7cceb"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="3cb95bac-ee42-46a2-a734-41e76c31f0a5">
-                    <propertyInstance
-                      Id="454e239c-abd6-49fa-a8ae-03138d30861e"
-                      name="IsConst"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="82e3e174-bb7d-4116-9206-a9bfffa5a65b">
-                    <propertyInstance
-                      Id="4149d86a-7358-459c-83ec-442ad46555a1"
-                      name="IsNullable"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9af8e9c1-2828-4c70-8934-2d636aa0ae62">
-                    <propertyInstance
-                      Id="fe4de68f-7bac-4b9e-8989-ced99f6e2df8"
-                      name="IsVolatile"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="3209a4af-4a15-4242-8404-ed6a47a4cb26">
-                    <propertyInstance
-                      Id="2b7f6ae5-1cd8-4ca5-b0ec-bf717f236fd0"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="a5c6806f-5595-4f22-ab4f-62252bf1f090"
-                LastKnownName="IContainer"
-                LastKnownLocation="Package7_0421.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="6232aa13-7f72-4c89-ba42-675a38b715ff"
             name="groupBox1"
             visibility="Private"
@@ -983,408 +942,6 @@
               <classMoniker
                 Id="d7f07d52-35ac-4092-b947-dcd0700d1e24"
                 LastKnownName="GroupBox"
-                LastKnownLocation="Package6_0421.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="7255f5bd-4226-4560-848f-c086bcdabdba"
-            name="label1"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="cfc2e651-c5ef-480a-9bc9-b78a2c763c96"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3Dlabel1"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="41b26ebb-1f3e-4116-a3c2-c46debe44b47"
-                name="field"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="195694d3-b224-4762-a6d4-4e0f3288e224">
-                    <propertyInstance
-                      Id="b1afc730-8fbd-48fe-a333-e4f9c8feee28"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ffe6301f-0b48-4156-b151-b67511f75f44">
-                    <propertyInstance
-                      Id="4cf0268e-4f23-4c37-ab01-164b9a1cb414"
-                      name="IsConst"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9ad0fadf-3827-46b1-8fad-303f68b68d5e">
-                    <propertyInstance
-                      Id="5c67d535-c291-42f2-aa78-9317fa52d6bf"
-                      name="IsNullable"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="fdaa650d-876f-46aa-9ab6-2c3467d3e4eb">
-                    <propertyInstance
-                      Id="23809324-8317-4950-b0de-a151b328706e"
-                      name="IsVolatile"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="57e3baa4-7e7a-4073-ab7e-9274d71428a5">
-                    <propertyInstance
-                      Id="f48566a7-955e-43e6-ba0a-801ac79bb1b5"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="06153ae2-6614-4024-9bae-31da6a5417e0"
-                LastKnownName="Label"
-                LastKnownLocation="Package6_0421.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="1b76ac44-5d76-406e-9512-162a4d27cf83"
-            name="label2"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="3675fb7d-474e-485e-8875-90a98fb2d584"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3Dlabel2"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="152a1d38-f6cd-441f-8878-ba87400ea2d4"
-                name="field"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="928ae3d6-4b00-4072-ac33-d400645c1e27">
-                    <propertyInstance
-                      Id="6dfd5f95-001a-4e51-8b43-dfb4ee1f761e"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ae078856-bc47-4e92-ae52-6717ab4cebe6">
-                    <propertyInstance
-                      Id="a6fcb4b8-e7eb-4356-b434-ed880793fe17"
-                      name="IsConst"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="fb2efa73-e635-41a3-b098-e16e52a91083">
-                    <propertyInstance
-                      Id="f242ae9c-d53c-42a3-8953-aa8b1a9749f8"
-                      name="IsNullable"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="143d0939-2670-4a58-9239-1ee6d7270000">
-                    <propertyInstance
-                      Id="ca2417a1-711e-44f5-9780-45dd4afeb7dd"
-                      name="IsVolatile"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5369e870-10c0-4231-a32f-dfa3b9376661">
-                    <propertyInstance
-                      Id="47320624-39f0-43b0-be60-1d0f9c48c90f"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="06153ae2-6614-4024-9bae-31da6a5417e0"
-                LastKnownName="Label"
-                LastKnownLocation="Package6_0421.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="0800bc37-7f8a-4ae3-8a52-914b88aed541"
-            name="label3"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="3afcb701-bb8b-4a3f-ba6d-ebf265e9bcc4"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3Dlabel3"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="abed5659-9015-4fa6-8fc8-e1838f77afb4"
-                name="field"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="1cd6c610-ba78-4683-90a4-3229562974e0">
-                    <propertyInstance
-                      Id="847c8a6e-1f94-447f-90db-4c973183cb37"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="4ec257ef-b69f-4712-aa09-e7e6da3dbb83">
-                    <propertyInstance
-                      Id="fcca39f9-f1fd-4258-95fc-da16807ed984"
-                      name="IsConst"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="3990b3c1-f629-48a4-8cfe-94aec177317e">
-                    <propertyInstance
-                      Id="19bf842c-5370-436e-9b0d-4f59af23ebeb"
-                      name="IsNullable"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="abbadc90-a6d5-48de-9f78-efbac0ce55c9">
-                    <propertyInstance
-                      Id="88a44d4b-53af-4e7e-8dad-b31d26e40dc7"
-                      name="IsVolatile"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a4d884f1-df9e-4cf5-bc22-d7fbf48e1a97">
-                    <propertyInstance
-                      Id="247f846e-f4f2-409e-be69-8692d26340b2"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="06153ae2-6614-4024-9bae-31da6a5417e0"
-                LastKnownName="Label"
-                LastKnownLocation="Package6_0421.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="12dfdd9a-07b1-468f-acd9-1cc71cee4ade"
-            name="label4"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="3fd41b1a-6962-42e9-a11e-a863f5996b6e"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3Dlabel4"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="a3375e26-27f7-419a-9676-d96247dac3c1"
-                name="field"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f9c5e5a3-1eeb-45f1-9416-5ba0e69e8ce8">
-                    <propertyInstance
-                      Id="c0237b79-3eaa-4082-8ed9-4ac1bd783c21"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="701a3ef5-3036-4aab-b60c-62b9f6a17f6b">
-                    <propertyInstance
-                      Id="00fe26b8-16ff-4797-8af0-5d63aece0eed"
-                      name="IsConst"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e8411131-82d8-4ed3-b00d-60662a082802">
-                    <propertyInstance
-                      Id="3a30542e-92c5-45d3-8aef-de4c24aa2ed0"
-                      name="IsNullable"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a2c21239-f960-4ab1-a44a-9f7f7c376c28">
-                    <propertyInstance
-                      Id="1a6cccb0-f1e0-4ff9-bdca-f9d067c89841"
-                      name="IsVolatile"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="eed9bab6-9caf-4f35-a446-728a4f1176a2">
-                    <propertyInstance
-                      Id="61bf1e02-c9d1-46b4-96e1-5da6491bf970"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="06153ae2-6614-4024-9bae-31da6a5417e0"
-                LastKnownName="Label"
-                LastKnownLocation="Package6_0421.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="9ddd7022-671f-499d-9058-dae2e2616e6b"
-            name="label5"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="044c277e-cc63-42ac-9009-124610c85f9a"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3Dlabel5"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="f7ac616d-f2e6-4aa7-8c8c-7484765352f3"
-                name="field"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="aad4be5a-bf73-4a9f-bcdd-184006e305b4">
-                    <propertyInstance
-                      Id="7669f92d-02eb-4ac9-be7b-5729d83ddd8b"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b5d89f3f-9b23-4d35-8f68-8df008aa66fb">
-                    <propertyInstance
-                      Id="ab1f78c9-a334-4336-a40c-aa65921e9398"
-                      name="IsConst"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9a55208d-0a6c-49f5-9991-6d37ec20b094">
-                    <propertyInstance
-                      Id="e110edcf-0ff1-450f-b907-0d2586de7858"
-                      name="IsNullable"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="8c92326d-1298-4ce1-8e47-479bdffee2df">
-                    <propertyInstance
-                      Id="fda3894a-6a71-41f7-b22e-f08413f321ca"
-                      name="IsVolatile"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="11a6a293-349f-4536-9191-36120203254e">
-                    <propertyInstance
-                      Id="942c646c-c625-42c7-a13f-70ce4cefb3e5"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="06153ae2-6614-4024-9bae-31da6a5417e0"
-                LastKnownName="Label"
-                LastKnownLocation="Package6_0421.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="6cc0e22a-6abb-43fe-adea-27ab93ee0632"
-            name="label6"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="d2d440a7-5d09-4d16-9fc6-7ee672693567"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3Dlabel6"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="e8ebfc22-015f-4de4-9a8f-9486da59a2b4"
-                name="field"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="154a5d3d-9331-495c-b013-10a552f66b59">
-                    <propertyInstance
-                      Id="500ebccb-12b2-45ca-a9a3-4d961a4a7cea"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c9e8de58-8a20-4387-8e33-964ef3b0c1a1">
-                    <propertyInstance
-                      Id="75f8b567-8639-4697-871d-9621b43ad086"
-                      name="IsConst"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="018dcdd8-fd70-4fb0-a56f-b90d03b92fb3">
-                    <propertyInstance
-                      Id="a39031b4-bd4d-406b-ae0b-1717eef42271"
-                      name="IsNullable"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="179d3634-e988-43a1-98fd-65bd5f5092c2">
-                    <propertyInstance
-                      Id="67995a59-0824-4478-91c2-611b5e2f842b"
-                      name="IsVolatile"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a94b7f7b-5c98-4cff-90de-47d2e6e6783c">
-                    <propertyInstance
-                      Id="9d9db446-e0fc-4aaa-8f83-f85c57bac921"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="06153ae2-6614-4024-9bae-31da6a5417e0"
-                LastKnownName="Label"
                 LastKnownLocation="Package6_0421.uml" />
             </type_NamedElement>
           </property>
@@ -2294,310 +1851,6 @@
                       Id="36351160-e470-4039-b5f8-fcb786291f57"
                       LastKnownName="User"
                       LastKnownLocation="Package4_0421.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="309f8a52-8fef-433c-a402-8eb111e39f3a"
-            name="Dispose"
-            visibility="Protected"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="5ba61135-5fc0-4019-a386-b2cb1ce6741e"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3D(Name%3DDispose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="cbfa1981-e4e5-48ed-93ae-04ab884878a1"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="3e8a09f3-2df4-4c56-af6d-088681da462a">
-                    <propertyInstance
-                      Id="0e07bd31-271f-420e-ae2c-1fc494be4539"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="08d9aad9-1c41-4fc2-90a2-681cb0b23bf3">
-                    <propertyInstance
-                      Id="fee9866a-c96a-4082-ad49-8de14444dee7"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a8ef287e-6725-42a7-acbe-4284a4c82064">
-                    <propertyInstance
-                      Id="d59cf683-0824-4c85-8ee5-a6acb0c03e4a"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="1749b6de-760e-4513-b3aa-c9f2a5d05177">
-                    <propertyInstance
-                      Id="92ce75a3-2d49-4a2b-a13e-be1888808434"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d01bc5d7-a4cd-493f-be46-1de71e11af57">
-                    <propertyInstance
-                      Id="a87d3aa4-6d18-4a61-bc3b-1a25714bfe34"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="dcefee24-678f-495e-9dc1-f46db6b098ed">
-                    <propertyInstance
-                      Id="0f20b32f-ae7e-4061-b3f4-f9eb82f9dd7d"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="f6c21d16-b062-4bae-922e-24ae69bea061"
-                  name="disposing"
-                  direction="In">
-                  <referencesInternal>
-                    <reference
-                      Id="f749831e-30be-4441-89c0-4d42a0b01c89"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3D(Name%3DDispose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3Ddisposing"
-                      tag="ViewCode" />
-                  </referencesInternal>
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                      LastKnownName="Boolean"
-                      LastKnownLocation="ModelingProject2.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="13c8e965-3cbe-497f-b144-56eaee8fb2cb"
-            name="ImageToByteArray"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="ac75202e-6586-46d5-b784-176ae3abce76"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3D(Name%3DImageToByteArray OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DImage)])"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="100bf449-f7fd-45e5-b8cf-9843fa7e6e14"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="0dcb8fba-3b51-4d8a-9632-a7bdc7b5e6e3">
-                    <propertyInstance
-                      Id="d68bd39f-fbfd-4d61-a0d3-0c1eda1d0515"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="4b39dc2c-2886-423c-af93-db5f726f20d5">
-                    <propertyInstance
-                      Id="ae205388-d46b-4f18-8a0f-adee6e66de5c"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="030c8302-aa3d-4036-bafa-ce4cc8d810ff">
-                    <propertyInstance
-                      Id="939045b4-e8b2-4ae7-8c71-6589bd3479b1"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ba13d68d-c519-4956-9d41-75ec70367d61">
-                    <propertyInstance
-                      Id="03dae383-7985-432c-b48e-96e4eefeb5ab"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="724ed2da-b478-407d-a1c7-8d0ead5dce4a">
-                    <propertyInstance
-                      Id="587e2d6f-74e5-4970-ba9f-228122eadf48"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e2630946-71a6-433b-90d2-6e12ad3c8108">
-                    <propertyInstance
-                      Id="ffca5eb1-5bf0-4d95-b10a-4a4b76999728"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="c6b1e26a-8aaa-4071-9b7d-b0f5bfb26bee"
-                  direction="Return"
-                  isOrdered="true">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="cc075308-5d2e-4f87-b6e3-839b8aaf2ed0"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="6cef663a-3ce7-41dd-9387-43c6a0d9b772"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="f8b3dab8-f17f-491d-a17a-2f1aad1cd823"
-                      LastKnownName="Byte"
-                      LastKnownLocation="Package1_0421.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="d3af0997-ca6d-46b1-a019-6ebd67230123"
-                  name="i_ImageIn"
-                  direction="In">
-                  <referencesInternal>
-                    <reference
-                      Id="e826b92f-5dd5-4dfe-abcc-09e71df76b89"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3D(Name%3DImageToByteArray OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DImage)]) ParameterIdentifier%3Di_ImageIn"
-                      tag="ViewCode" />
-                  </referencesInternal>
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="48ec1d4e-2adb-45e9-908b-47bda2fa8140"
-                      LastKnownName="Image"
-                      LastKnownLocation="Package2_0421.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="3edcdfd3-6add-425c-ac7b-f603a9775af8"
-            name="button1_Click"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="514243c8-0b11-46cb-ab28-6e567a05d2cb"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3D(Name%3Dbutton1_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="e28f75a7-5726-4a77-983b-3051386f69e1"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f609b4bf-d56c-405c-bd0e-4efd8293f7f3">
-                    <propertyInstance
-                      Id="4fc8ebcf-18af-4fbc-809f-a054a52496e0"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="58fbe48d-1240-412e-b438-d733a08f7066">
-                    <propertyInstance
-                      Id="aa2a2b67-2a1d-4c31-ba2b-fdc3878b4ecb"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d5f7fc35-37e5-4cf1-a408-7383ac0b4f73">
-                    <propertyInstance
-                      Id="7d2d7d25-8e09-48cb-a223-ad7c7bafc886"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="bedb7175-514b-4fe2-b735-c1d39409eafb">
-                    <propertyInstance
-                      Id="750efe3d-85d3-4d6e-bcd4-a9e04a962001"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="43c4dbb1-b271-46f2-b339-173c279041d6">
-                    <propertyInstance
-                      Id="dae17162-3785-4c9d-8b22-e9e69153407d"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5d694518-25e9-4070-8283-14ae2bdde17e">
-                    <propertyInstance
-                      Id="5128b7a7-7a5b-4b36-9f88-e3b173bc8071"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="9178291b-09c0-4d7c-bfd9-3f757d80f70c"
-                  name="sender"
-                  direction="In">
-                  <referencesInternal>
-                    <reference
-                      Id="6adbc076-366e-48a4-b27d-60567c458f5c"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3D(Name%3Dbutton1_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
-                      tag="ViewCode" />
-                  </referencesInternal>
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="0da765bb-f611-43e5-a52b-77b4757ffe1e"
-                      LastKnownName="Object"
-                      LastKnownLocation="Package1_0421.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="e5afcb9c-9929-45aa-b150-59a3ac409028"
-                  name="e"
-                  direction="In">
-                  <referencesInternal>
-                    <reference
-                      Id="529c164e-5bfe-4426-868e-0bd1b9a6195d"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3D(Name%3Dbutton1_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
-                      tag="ViewCode" />
-                  </referencesInternal>
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="f61ae7f3-a08d-46d0-8da1-4c9188227022"
-                      LastKnownName="EventArgs"
-                      LastKnownLocation="Package1_0421.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -4165,112 +3418,6 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
           </operation>
-          <operation
-            Id="6d9a1c0a-d94d-4a66-b160-533c31481cfe"
-            name="button2_Click"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="21a4cd5d-2f04-4381-a66a-64a178cc9e7f"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3D(Name%3Dbutton2_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="d224a7b4-3706-47fc-bb3b-4848993b00ed"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="794853ff-4526-408b-8cfd-a5d593e8050c">
-                    <propertyInstance
-                      Id="773f8065-9620-4781-b958-ff234f64cd9d"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b9b2362b-5f7a-4005-9af6-1e4b88e19c43">
-                    <propertyInstance
-                      Id="599aa098-6ef0-4df8-b84d-3be27fd0bc00"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="49bb6726-228b-4451-8511-14a36d94700c">
-                    <propertyInstance
-                      Id="b56c7457-59cf-43b2-954e-8fe1395aa31a"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="dd5af03a-6ea4-47a1-b30e-8b583e54d914">
-                    <propertyInstance
-                      Id="760598e4-0864-47b8-9ef0-26fe5511a57e"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b31c7441-6b0b-4600-9e08-aa37344cc136">
-                    <propertyInstance
-                      Id="d1467940-a73b-4ef2-8255-bd764740daea"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="3fd955dc-d7ac-4081-9f39-e2ec4d0c9ce5">
-                    <propertyInstance
-                      Id="054e2286-93b7-444d-b271-9ba741891ae9"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="9c2f3396-0721-41f3-ab65-3bfa4b625b86"
-                  name="sender"
-                  direction="In">
-                  <referencesInternal>
-                    <reference
-                      Id="51d5b98f-6f52-40e2-9483-b075b226b9a2"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3D(Name%3Dbutton2_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
-                      tag="ViewCode" />
-                  </referencesInternal>
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="0da765bb-f611-43e5-a52b-77b4757ffe1e"
-                      LastKnownName="Object"
-                      LastKnownLocation="Package1_0421.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="9bf27c55-9c6f-443f-829e-8177e5283372"
-                  name="e"
-                  direction="In">
-                  <referencesInternal>
-                    <reference
-                      Id="bd5f5cd3-6411-4158-b3ab-138ccb4cada5"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFormImageEditing Member%3D(Name%3Dbutton2_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
-                      tag="ViewCode" />
-                  </referencesInternal>
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="f61ae7f3-a08d-46d0-8da1-4c9188227022"
-                      LastKnownName="EventArgs"
-                      LastKnownLocation="Package1_0421.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -4381,45 +3528,6 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="f031e9c5-4efb-4a11-9689-2549e13cb184"
-            isDerived="false"
-            sourceEndRoleName="MainForm"
-            targetEndRoleName="Post"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="a4f459fc-4c5d-4f1c-b863-245f4f5af613"
-              LastKnownName="Post"
-              LastKnownLocation="Package4_0421.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="681c7fdd-6134-4989-8ca8-8e99fb535db3"
-                  name="MainForm"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f19ee4b7-66cb-4da6-a818-b7849a9dabaa"
-                  name="Post"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="a60c6f03-92a2-4af4-9415-2426240a3a6d"
             isDerived="false"
             sourceEndRoleName="MainForm"
@@ -4454,7 +3562,20 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="271577dc-7de0-4944-816f-da2c510b5eda"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ea3cc498-d828-4b28-a993-3cc3281995ea"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -4493,7 +3614,20 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="21accc24-812e-4e6e-81d9-080716b9619c"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8d1f19f5-e7f2-479c-8cce-ce183603255a"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -4532,25 +3666,38 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="736b7187-00f4-4cd2-9656-484be2823674"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2fc5bda8-97e0-41fc-aeb8-d756ca4e081e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="d7c48dd9-09b2-4683-9c24-65dd26cae346"
+            Id="48c09df4-5d24-4bdf-9754-964bd0bc27ae"
             isDerived="false"
             sourceEndRoleName="MainForm"
-            targetEndRoleName="Post"
+            targetEndRoleName="PostedItem"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="a4f459fc-4c5d-4f1c-b863-245f4f5af613"
-              LastKnownName="Post"
+              Id="d1461ab4-eaa8-410b-892e-6ebbacaf1273"
+              LastKnownName="PostedItem"
               LastKnownLocation="Package4_0421.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="0165143b-e5fc-4c1e-8612-ea61627b46b0"
+                  Id="f891310e-835d-47da-ba87-28192b87d979"
                   name="MainForm"
                   isLeaf="false"
                   isStatic="false"
@@ -4563,15 +3710,28 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="55d90b15-8606-4a55-a864-309b2ecad377"
-                  name="Post"
+                  Id="7fbaf1e5-9767-40b6-98af-3351e914f8a2"
+                  name="PostedItem"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7ef35640-16f4-4e53-9528-3a1029479366"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b7592a62-f018-4028-bb40-db9833f275f4"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -4993,341 +4153,6 @@
             </type_NamedElement>
           </property>
           <property
-            Id="d45f0796-c23a-4958-8a8e-d19bdd7bd8d4"
-            name="components"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="d7acf175-5183-49de-a3dc-93aab335310b"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DMainForm Member%3Dcomponents"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="d229e4ea-b2d7-46af-8b2c-7ed9c9269970"
-                name="field"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="382771c3-7505-48e2-b346-d6461039439c">
-                    <propertyInstance
-                      Id="af519df3-3684-4acb-8ad5-f5c0d510440d"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="bcb674b1-cacf-445e-8c6c-f36222f94dfb">
-                    <propertyInstance
-                      Id="b7a77b30-572b-4298-a862-2e5ad056b4be"
-                      name="IsConst"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b6626312-88c8-4d9c-b053-20d8d9c66165">
-                    <propertyInstance
-                      Id="6d959917-cbcf-494f-aca5-a50ef4102053"
-                      name="IsNullable"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="cd0a8d7b-4e32-4b27-a60d-9ea522446ab8">
-                    <propertyInstance
-                      Id="8bfda3ef-2d5c-4dd9-b7fb-a348dd4d8954"
-                      name="IsVolatile"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="608f3b6e-7501-4856-97ca-c003ec70e6fe">
-                    <propertyInstance
-                      Id="1ddc094f-5afd-49be-bb4e-bb7379bb0085"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="a5c6806f-5595-4f22-ab4f-62252bf1f090"
-                LastKnownName="IContainer"
-                LastKnownLocation="Package7_0421.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="2dbced37-f97a-402d-a092-d3db0126e659"
-            name="label1"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="96e00b25-dd30-49aa-abd9-937b6edee6a2"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DMainForm Member%3Dlabel1"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="12b75f2e-6bd9-42e7-901a-76ada55b15c2"
-                name="field"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a45bd957-9565-4b28-a333-5df819cdc96d">
-                    <propertyInstance
-                      Id="f49ada2b-9554-4eb9-b6a1-eed2a4e071ed"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b800bc81-a416-4b84-b9b9-f63b05ff3d16">
-                    <propertyInstance
-                      Id="d01c2b81-ce5a-456c-987b-55321ee6f133"
-                      name="IsConst"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="549d9b76-1b6f-40f2-9d69-9b780a7a7177">
-                    <propertyInstance
-                      Id="c2117f9a-07b5-4b44-b68a-5318e989cee6"
-                      name="IsNullable"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="4b94a5d8-ba65-4544-b585-5e5b4a381bbf">
-                    <propertyInstance
-                      Id="fa2ffa53-60f1-432d-8dda-a6e7660002a6"
-                      name="IsVolatile"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d0af6acf-ab86-4eb3-85e7-d36181b79563">
-                    <propertyInstance
-                      Id="17387b1d-6693-46e8-b0b3-b94499cf8dda"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="06153ae2-6614-4024-9bae-31da6a5417e0"
-                LastKnownName="Label"
-                LastKnownLocation="Package6_0421.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="5f13d2f2-ca6d-4054-98ce-ae5cce05f53a"
-            name="label2"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="07ad3e8f-32d9-4bcd-9c5e-d3c4e370ec91"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DMainForm Member%3Dlabel2"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="0261c1ad-464a-4286-8efa-5ec06b8c31b4"
-                name="field"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="38140b2d-04b8-469a-806e-1cb891918330">
-                    <propertyInstance
-                      Id="b1c5776c-47b8-445c-b574-f4be3047cbfe"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="19061f23-09eb-417a-8a83-b40007e16c5d">
-                    <propertyInstance
-                      Id="4d757ef8-9516-4079-89c9-5f5461b75971"
-                      name="IsConst"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b4aad46e-6626-4dce-b147-abf9a1c3963b">
-                    <propertyInstance
-                      Id="d32a162f-2b01-4e78-ab80-987831a4a6cd"
-                      name="IsNullable"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5ac939a0-0142-41d3-91ec-9d0ca05f1386">
-                    <propertyInstance
-                      Id="f0b39e64-cb44-4727-847e-df4c4d4313f0"
-                      name="IsVolatile"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="7263ba76-96a7-4e2d-a183-b974b5207b9d">
-                    <propertyInstance
-                      Id="c04b1bb4-a821-490d-b905-467ba71ee95b"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="06153ae2-6614-4024-9bae-31da6a5417e0"
-                LastKnownName="Label"
-                LastKnownLocation="Package6_0421.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="c31b0a03-f776-4222-8179-720ad8705eb8"
-            name="labelLikedPages"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="83e228fe-9766-421d-a1d3-cec689d14ffe"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DMainForm Member%3DlabelLikedPages"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="69784b96-4cee-4499-8a78-af5f411adefc"
-                name="field"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b6400a55-a16c-4c28-9baa-ab80f42ec726">
-                    <propertyInstance
-                      Id="98d268c1-6dcf-4aac-a016-62eece60d53c"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="02aff8f8-4962-46be-8ffa-5e5a6a468b6d">
-                    <propertyInstance
-                      Id="56861838-4f46-41e8-9429-2f367a4f7050"
-                      name="IsConst"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="4bbbc959-5b0c-4c1d-a24a-4b01a591eb47">
-                    <propertyInstance
-                      Id="8d8b9441-1c44-4652-8f16-deb68e5302ed"
-                      name="IsNullable"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="81a23b5b-08b2-46f7-9992-f8fb2f715b40">
-                    <propertyInstance
-                      Id="5ef3a2c2-33c7-440c-9538-3fd63820cd8d"
-                      name="IsVolatile"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="8daa9044-025e-4636-8adf-1675c97feca6">
-                    <propertyInstance
-                      Id="09f4db31-f3c6-46c2-9c7d-230ce53380e9"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="06153ae2-6614-4024-9bae-31da6a5417e0"
-                LastKnownName="Label"
-                LastKnownLocation="Package6_0421.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="7b4b2efa-cb57-4d07-b6b4-30ce7a6bbf80"
-            name="labelProfilePictureDate"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="2d5cbfea-9f51-4613-943e-ee50c3007514"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DMainForm Member%3DlabelProfilePictureDate"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="19020434-e7fe-42b2-b91e-f860e8026016"
-                name="field"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="84f45f50-6600-46f2-86a8-fa40c4b91a7d">
-                    <propertyInstance
-                      Id="eededaf5-fb9c-4f8a-b62b-ee73b43dcbf0"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="2a558c90-0477-4c19-a086-855da3ea96fe">
-                    <propertyInstance
-                      Id="6ededeea-4ccb-49ff-83cf-7d6772e2d9a8"
-                      name="IsConst"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="eb7a0716-7de7-45ad-8419-81b185f4febe">
-                    <propertyInstance
-                      Id="de8c6db0-6029-4dc9-b5a2-54bf1e214912"
-                      name="IsNullable"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="0551bebb-a6a9-46e2-8c5d-58a7347e3a89">
-                    <propertyInstance
-                      Id="494accf5-d6aa-4aed-a766-336f1e7c0ddf"
-                      name="IsVolatile"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f4c0cced-f20b-40c0-bba3-26b2f6fb7566">
-                    <propertyInstance
-                      Id="3ce56e96-5171-4c72-8e07-08829cf9efdf"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="06153ae2-6614-4024-9bae-31da6a5417e0"
-                LastKnownName="Label"
-                LastKnownLocation="Package6_0421.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="d46ee1b8-a586-4c21-8ef9-67b78a2b4bb9"
             name="listBoxLikedPages"
             visibility="Private"
@@ -5392,73 +4217,6 @@
                 Id="e6dd39d0-7b74-4f81-b93a-56b0ce608c00"
                 LastKnownName="ListBox"
                 LastKnownLocation="Package6_0421.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="f027b416-dad3-456d-afda-1ce822c91ad6"
-            name="m_CurrentPhotoIndexInAlbum"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="5fad04a9-da33-42d4-931d-143ed5aaa804"
-                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DMainForm Member%3Dm_CurrentPhotoIndexInAlbum"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="6209f57a-e072-4c2f-a487-672a0f073c47"
-                name="field"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="494d2da1-32c4-4f81-b8e9-1c75f8d9f354">
-                    <propertyInstance
-                      Id="8b353397-25eb-439c-a1fd-ded0965473ea"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="2ffa1e8b-cced-4966-bcff-f06312f8de60">
-                    <propertyInstance
-                      Id="fbd90ad6-cbb4-44fc-b548-c58fd18948d4"
-                      name="IsConst"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="2092b16f-23ec-43db-8a7f-9002a1c3028a">
-                    <propertyInstance
-                      Id="5917254a-6089-45b7-a617-84c39c78f786"
-                      name="IsNullable"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="03236278-a053-4f0c-80af-9feb1f7b2aee">
-                    <propertyInstance
-                      Id="bc251302-c960-486c-9156-64f377e77e8b"
-                      name="IsVolatile"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c9c90f04-4238-40f1-8f44-2603bef01af6">
-                    <propertyInstance
-                      Id="e77c4e1a-2a81-452e-b22f-2e246baf4fc8"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                LastKnownName="Integer"
-                LastKnownLocation="ModelingProject2.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -5798,93 +4556,6 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation
-            Id="bed1c3dc-9133-4892-ac74-a036c57656db"
-            name="Dispose"
-            visibility="Protected"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="0e225c91-543b-4984-9129-18afd43e07e4"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DMainForm Member%3D(Name%3DDispose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="f4b88248-b842-419c-8a46-e9ee7019f972"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="397da2cc-25d7-4bad-b43f-2035b9dd0a9c">
-                    <propertyInstance
-                      Id="b37ac623-0122-4250-b387-725e5b04a0d8"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a43a23f5-16aa-4d1e-af94-1fbd88b402b7">
-                    <propertyInstance
-                      Id="ec299320-07c8-46a4-895b-15e14ce77648"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="1c88d8a0-8a2f-4e2e-b96d-14875f4be0ae">
-                    <propertyInstance
-                      Id="b3ee9300-47fb-40fc-975d-8f829522928a"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c4e535b8-94f1-4348-9474-eb3aa7c4a727">
-                    <propertyInstance
-                      Id="f4bbb369-5296-4525-9199-f7e71cb499b3"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e2611145-7ea3-4fef-89ee-381fe580a4b3">
-                    <propertyInstance
-                      Id="42d63fe3-0cf9-4e48-8dee-fef2241044fb"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="13459980-3aef-4b16-9397-9ab87546ac19">
-                    <propertyInstance
-                      Id="1934c641-9b4d-4aad-a8bb-ab85c6085d6e"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="1ec1b883-1602-44ff-b833-f35aa1f1cdd7"
-                  name="disposing"
-                  direction="In">
-                  <referencesInternal>
-                    <reference
-                      Id="9cbcc014-ac17-4da2-b979-81a80c9f2776"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DMainForm Member%3D(Name%3DDispose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3Ddisposing"
-                      tag="ViewCode" />
-                  </referencesInternal>
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                      LastKnownName="Boolean"
-                      LastKnownLocation="ModelingProject2.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
           <operation
             Id="36856685-1813-4655-8c8d-2ac875e62152"
             name="buttonButtonShowLikedPages_Click"
@@ -6501,72 +5172,6 @@
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
-          </operation>
-          <operation
-            Id="c42bf5f9-1922-4162-8b9a-0db461f41efb"
-            name="InitializeComponent"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="d75d8096-5f7f-486f-b6ef-2d4c6048854b"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DMainForm Member%3DInitializeComponent"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="3734759c-8be7-4dec-b6d3-eae3a5dbce95"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6ee19cf0-8f56-4bc2-a581-519a1e58d6b2">
-                    <propertyInstance
-                      Id="cf6dd5a4-b113-48fa-97a4-d6b72f107bc0"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="2768b52c-c5c6-44a2-910d-087846db2717">
-                    <propertyInstance
-                      Id="4cf6f7f9-9af0-468c-8d3c-e8f7d0b8c4da"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b68c9a58-5f53-4bb1-9de1-cea42f08b1f3">
-                    <propertyInstance
-                      Id="2bdace49-8399-4c7a-96f9-a0c6a702e828"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e0bba0b8-fa14-43e3-91d5-5d23120122ae">
-                    <propertyInstance
-                      Id="6eef804d-bfe2-4a7d-a7c9-6706fdf2ddf1"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="8e70ef92-f89e-4bca-a750-1dff6fefe4aa">
-                    <propertyInstance
-                      Id="5d81f9d1-db5b-4d68-a927-7d785f7c1fa2"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="7aff1ee2-da91-405d-933d-7a064da2cdb2">
-                    <propertyInstance
-                      Id="80a91d79-91b6-4f6e-b455-3658f86c4f98"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
           </operation>
           <operation
             Id="d68f779e-89bd-46cb-8cba-f51a7c6ddb79"
@@ -8016,20 +6621,20 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="315295c0-ec3d-4f38-9af8-c8cab5116360"
+            Id="2eaf4e35-7be2-4dd6-9668-bdc74515cf59"
             isDerived="false"
             sourceEndRoleName="Filter"
-            targetEndRoleName="FiltersManager"
+            targetEndRoleName="ColorMatrix"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="2712f323-96c2-453c-a368-9d93901b83f7"
-              LastKnownName="FiltersManager"
-              LastKnownLocation="Package_0421.uml" />
+              Id="a2c3964b-260d-4a98-9cdd-430ff6144f5e"
+              LastKnownName="ColorMatrix"
+              LastKnownLocation="ModelingProject2.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="0dce7857-8e69-4738-b6de-3d5572a4e45e"
+                  Id="24bd669c-61bb-411d-8d92-86f8c57d1d1a"
                   name="Filter"
                   isLeaf="false"
                   isStatic="false"
@@ -8042,8 +6647,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="71f6ab33-2c7b-48c6-bcf7-f31a2fea39d0"
-                  name="FiltersManager"
+                  Id="1a6c077f-619f-4d77-9e1e-2bd8f19629ca"
+                  name="ColorMatrix"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -8565,6 +7170,60 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="3cf6c3a5-cc24-4d1b-ad35-067a1fe447d2"
+            isDerived="false"
+            sourceEndRoleName="FiltersManager"
+            targetEndRoleName="Filter"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="28b333b9-b941-49c1-a869-070caf18ef88"
+              LastKnownName="Filter"
+              LastKnownLocation="Package_0421.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cd2996e2-a638-4a98-ae09-ff1f26734fbd"
+                  name="FiltersManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fcc00250-3c49-4dbd-bd97-2c969f88c06a"
+                  name="Filter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="828528fd-e28b-40be-a88c-e76c22d44e01"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="016a123e-947a-4090-a253-5fb74eba88ef"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="987dd24c-86bd-4821-b82d-f7d943e946a9"

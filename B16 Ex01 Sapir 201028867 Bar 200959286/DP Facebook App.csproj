@@ -71,6 +71,9 @@
     <EmbeddedResource Include="FormImageEditing.resx">
       <DependentUpon>FormImageEditing.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagram.sequencediagram.layout">
+      <DependentUpon>Sequence Diagram.sequencediagram</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +87,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Sequence Diagram.sequencediagram" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
