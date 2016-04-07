@@ -18,7 +18,7 @@
             float i_BlueValue,
             float i_Range)
         {
-            ColorMatrix satBrightContrMatrix = GetBrightnessSaturationContrastMatrix(i_SaturationValue, i_BrightnessValue, i_ContrastValue);
+            ColorMatrix satBrightContrMatrix = GetBrightnessSaturationContrastMatrix(i_SaturationValue, i_BrightnessValue, i_ContrastValue, i_Range);
             ColorMatrix rgbMatrix = GetRedGreenBlueMatrix(i_RedValue, i_GreenValue, i_BlueValue, i_Range);
 
             // multiply the matrix and send as result
@@ -26,14 +26,11 @@
         }
 
         // get pixel matrix with the given slider values of brightness saturation contrast
-        public static ColorMatrix GetBrightnessSaturationContrastMatrix(
-            float i_SaturationValue,
-            float i_BrightnessValue,
-            float i_ContrastValue)
+        public static ColorMatrix GetBrightnessSaturationContrastMatrix(float i_SaturationValue, float i_BrightnessValue, float i_ContrastValue, float i_Range)
         {
-            float saturation = (i_SaturationValue / 5f) + 1;
-            float contrast = (i_ContrastValue / 5f) + 1;
-            float brightness = ((i_BrightnessValue + 10) / 10f) - 1;
+            float saturation = (i_SaturationValue / (i_Range / 2f) ) + 1;
+            float contrast = (i_ContrastValue / (i_Range / 2f)) + 1;
+            float brightness = ((i_BrightnessValue + i_Range) / i_Range) - 1;
 
             float baseSaturation = 1.0f - saturation;
             float redSaturationWeight = k_RedColorWeight * baseSaturation;
