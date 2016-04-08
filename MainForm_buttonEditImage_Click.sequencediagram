@@ -38,7 +38,7 @@
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification Id="27a7eaf9-4e25-4700-95d5-c8f6234fbd49" name="BehaviorExecutionSpecification">
             <coveredLifelines>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker Id="ebb146a9-1223-4635-becd-ccc9e796ea2e" LastKnownName="ExecutionOccurrenceSpecification" />
@@ -67,7 +67,7 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="6ba1d8e6-7276-43d4-b055-0d08c73ba0a1" name="MessageOccurrenceSpecification">
@@ -77,17 +77,17 @@
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="600e9dd8-5166-4aaf-99cb-3bcd56cde43f" name="MessageOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="c0d237ee-600d-42a6-bf4d-5b089e69fb26" name="MessageOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification Id="4ff2dfad-8229-49f4-8ccb-1a2c8bdec26b" name="BehaviorExecutionSpecification">
             <coveredLifelines>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker Id="9d6328f7-5e38-4113-985a-644c9e6b7396" LastKnownName="ExecutionOccurrenceSpecification" />
@@ -108,12 +108,12 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="515eac87-eee2-40a4-ae66-601820167e02" name="MessageOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification Id="5f0cb471-a8fb-431e-8b20-cf3246692c59" name="BehaviorExecutionSpecification">
@@ -146,7 +146,7 @@
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="3e373711-a1db-453f-8e34-2cbde1487b2d" name="MessageOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="d6735bc4-2ff7-42df-b463-811e10a3ad88" name="MessageOccurrenceSpecification">
@@ -200,7 +200,7 @@
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="84bfecf8-9570-4b02-8810-a1162374b04d" name="MessageOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="4c67ec8d-bcc9-4f5d-9807-00a953f7446b" name="MessageOccurrenceSpecification">
@@ -225,7 +225,7 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </covered>
           </executionOccurrenceSpecification>
           <behaviorExecutionSpecification Id="9c2ebb5f-fc58-4b36-be87-1ee2a112dfc1" name="BehaviorExecutionSpecification">
@@ -260,12 +260,12 @@
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="40bce777-2f45-4030-b72d-cfdd39978c63" name="MessageOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="12065d76-261c-4214-b2bd-997c257f22b7" name="MessageOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="7d8a55b6-d463-40c9-87e7-6ae16fa2f5c2" name="MessageOccurrenceSpecification">
@@ -285,7 +285,7 @@
           </executionOccurrenceSpecification>
           <behaviorExecutionSpecification Id="395a07fe-3758-4696-987f-3246f91ecacd" name="BehaviorExecutionSpecification">
             <coveredLifelines>
-              <lifelineMoniker Id="1964922c-1cd2-406a-b302-fedd47abf97c" LastKnownName="Filter Utilities" />
+              <lifelineMoniker Id="1964922c-1cd2-406a-b302-fedd47abf97c" LastKnownName="FilterUtilities" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker Id="6c961381-6853-42ee-81aa-52dd363253bf" LastKnownName="ExecutionOccurrenceSpecification" />
@@ -305,27 +305,27 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="1964922c-1cd2-406a-b302-fedd47abf97c" LastKnownName="Filter Utilities" />
+              <lifelineMoniker Id="1964922c-1cd2-406a-b302-fedd47abf97c" LastKnownName="FilterUtilities" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="0f208d5a-7c3e-4ea6-aaac-c4f9279b1022" name="MessageOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="1964922c-1cd2-406a-b302-fedd47abf97c" LastKnownName="Filter Utilities" />
+              <lifelineMoniker Id="1964922c-1cd2-406a-b302-fedd47abf97c" LastKnownName="FilterUtilities" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="7506a6ff-0529-4c67-ba4e-344e52198322" name="MessageOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="698e3725-71aa-4029-b347-f667009e77e3" name="MessageOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="eb822552-bd89-463f-8b28-6040c1f65be7" name="MessageOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="1964922c-1cd2-406a-b302-fedd47abf97c" LastKnownName="Filter Utilities" />
+              <lifelineMoniker Id="1964922c-1cd2-406a-b302-fedd47abf97c" LastKnownName="FilterUtilities" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="698e3725-71aa-4029-b347-f667009e77e3" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="6c961381-6853-42ee-81aa-52dd363253bf" name="ExecutionOccurrenceSpecification">
@@ -335,7 +335,7 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="1964922c-1cd2-406a-b302-fedd47abf97c" LastKnownName="Filter Utilities" />
+              <lifelineMoniker Id="1964922c-1cd2-406a-b302-fedd47abf97c" LastKnownName="FilterUtilities" />
             </covered>
           </executionOccurrenceSpecification>
           <behaviorExecutionSpecification Id="1b55f437-08f3-4e69-b8ee-84662ffd1629" name="BehaviorExecutionSpecification">
@@ -370,7 +370,7 @@
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="0b9de1c5-0f33-4128-9062-45410fd2e525" name="MessageOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="1c5ce19a-e221-44e1-9fe2-e5e69696a5a7" name="MessageOccurrenceSpecification">
@@ -380,7 +380,7 @@
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="8cda36ec-db07-44aa-bb81-03db1d8b6fca" name="MessageOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="1fe7fb9d-17f7-44d9-bd93-22f3448f0498" name="ExecutionOccurrenceSpecification">
@@ -395,7 +395,7 @@
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="9704c8cd-dcf3-42a8-87bb-3ece31d5c28d" name="MessageOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="1b9f897c-9e7b-464d-91b7-a48e8b5c6ef2" name="MessageOccurrenceSpecification">
@@ -410,7 +410,7 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="Image Editor" />
+              <lifelineMoniker Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" LastKnownName="FormImageEditor" />
             </covered>
           </executionOccurrenceSpecification>
           <executionOccurrenceSpecification Id="ec541088-470a-44a8-a771-f19a710ed31b" name="ExecutionOccurrenceSpecification">
@@ -435,7 +435,7 @@
               <executionOccurrenceSpecificationMoniker Id="ec541088-470a-44a8-a771-f19a710ed31b" LastKnownName="ExecutionOccurrenceSpecification" />
             </topLevelOccurrences>
           </lifeline>
-          <lifeline Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" name="Image Editor" isActor="false" lifelineDisplayName="Image Editor" referencedInstance="(Assembly=&quot;$(2f4c586a-7ce4-4301-a62e-182c948134d8.OutputPathUri)&quot; Namespace=B16_Ex01_Sapir_201028867_Bar_200959286 Type=FormImageEditing ObjectInstance=&quot;Object instance 8&quot;)" referencedType="B16_Ex01_Sapir_201028867_Bar_200959286‎.FormImageEditing">
+          <lifeline Id="3e938367-0d31-4f4c-89d4-2839ec33fcd2" name="FormImageEditor" isActor="false" lifelineDisplayName="FormImageEditor" referencedInstance="(Assembly=&quot;$(2f4c586a-7ce4-4301-a62e-182c948134d8.OutputPathUri)&quot; Namespace=B16_Ex01_Sapir_201028867_Bar_200959286 Type=FormImageEditing ObjectInstance=&quot;Object instance 8&quot;)" referencedType="B16_Ex01_Sapir_201028867_Bar_200959286‎.FormImageEditing">
             <referencesInternal>
               <reference Id="22d19a5d-9cc6-45af-939d-3a550b38a44d" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=B16_Ex01_Sapir_201028867_Bar_200959286)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(2f4c586a-7ce4-4301-a62e-182c948134d8.OutputPathUri)&amp;quot; Namespace=B16_Ex01_Sapir_201028867_Bar_200959286 Type=FormImageEditing)&quot;)" tag="DGQL" />
               <reference Id="e69d115b-2fbe-4503-8d24-aefa15cf47bc" handle="(Assembly=&quot;$(2f4c586a-7ce4-4301-a62e-182c948134d8.OutputPathUri)&quot; Namespace=B16_Ex01_Sapir_201028867_Bar_200959286 Type=FormImageEditing)" tag="DGML" />
@@ -457,7 +457,7 @@
               <executionOccurrenceSpecificationMoniker Id="d6c33dd7-3a71-4746-b0c0-9e5167566d75" LastKnownName="ExecutionOccurrenceSpecification" />
             </topLevelOccurrences>
           </lifeline>
-          <lifeline Id="1964922c-1cd2-406a-b302-fedd47abf97c" name="Filter Utilities" isActor="false" lifelineDisplayName="Filter Utilities" referencedType="B16_Ex01_Sapir_201028867_Bar_200959286‎.FiltersManager">
+          <lifeline Id="1964922c-1cd2-406a-b302-fedd47abf97c" name="FilterUtilities" isActor="false" lifelineDisplayName="FilterUtilities" referencedType="B16_Ex01_Sapir_201028867_Bar_200959286‎.FiltersManager">
             <referencesInternal>
               <reference Id="0bcd48d1-147a-45da-9d2f-ca9312d3d551" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=B16_Ex01_Sapir_201028867_Bar_200959286)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(2f4c586a-7ce4-4301-a62e-182c948134d8.OutputPathUri)&amp;quot; Namespace=B16_Ex01_Sapir_201028867_Bar_200959286 Type=FiltersManager)&quot;)" tag="DGQL" />
               <reference Id="c04571c6-7b90-4854-b4b5-3836c8e724b7" handle="(Assembly=&quot;$(2f4c586a-7ce4-4301-a62e-182c948134d8.OutputPathUri)&quot; Namespace=B16_Ex01_Sapir_201028867_Bar_200959286 Type=FiltersManager)" tag="DGML" />

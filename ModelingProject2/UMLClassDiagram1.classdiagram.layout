@@ -218,9 +218,5 @@
         <classShapeMoniker Id="5b949540-7ebc-428a-92f8-a88d23aa7482" />
       </nodes>
     </associationConnector>
-    <commentShape Id="752c7325-6a10-44d5-b339-16d9ae74c97d" absoluteBounds="11.625, 4, 1.25, 0.375" customColor="Transparent">
-      <commentMoniker Id="48d95b93-a106-4684-b81a-560e453a1c6e" />
-      <relativeChildShapes />
-    </commentShape>
   </nestedChildShapes>
 </logicalClassDesignerDiagram>

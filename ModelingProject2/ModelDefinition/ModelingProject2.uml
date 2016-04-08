@@ -3,10 +3,6 @@
   dslVersion="1.0.0.0"
   Id="cd9a1ab9-c8e1-4d86-aaa2-d58fb1d5b522"
   name="ModelingProject2" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
-  <ownedCommentsInternal>
-    <comment
-      Id="e42d6e44-b1ce-451c-8541-e911b7b1d284" />
-  </ownedCommentsInternal>
   <referencesInternal>
     <reference
       Id="4c7b2640-02d3-461b-8836-f8a75ff083f7"

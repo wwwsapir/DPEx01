@@ -82,17 +82,26 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
             readjustImageAndShow();
         }
 
-        private void readjustImageAndShow()
+        private void readjustImageAndShow(bool i_IdentityFilter = false)
         {
-            // get the right filter with given sliders values
-            ColorMatrix filter = ColorMatrixUtilities.GetColorMatrixWithAllFilters(
-                this.trackBarSaturation.Value,
-                this.trackBarBrightness.Value,
-                this.trackBarContrast.Value,
-                this.trackBarRed.Value,
-                this.trackBarGreen.Value,
-                this.trackBarBlue.Value,
-                sr_ValueRange);
+            ColorMatrix filter;
+            if (i_IdentityFilter == false)
+            {
+                // get the right filter with given sliders values
+                    filter = ColorMatrixUtilities.GetColorMatrixWithAllFilters(
+                    this.trackBarSaturation.Value,
+                    this.trackBarBrightness.Value,
+                    this.trackBarContrast.Value,
+                    this.trackBarRed.Value,
+                    this.trackBarGreen.Value,
+                    this.trackBarBlue.Value,
+                    sr_ValueRange);
+            }
+            else
+            {
+                // default matrix is the identity matrix
+                filter = new ColorMatrix();
+            }
 
             // Adjust image
             Bitmap filteredImage = ColorMatrixUtilities.AdjustImage(filter, this.CurrentImage);
@@ -120,6 +129,7 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
 
         private void buttonBrowseImage_Click(object sender, EventArgs e)
         {
+            bool v_ApplyIdentityFilter = true;
             if (this.openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 this.CurrentImage = Image.FromFile(this.openFileDialog.FileName);
@@ -128,14 +138,15 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
                 this.enableFilterControls();
                 this.buttonUploadImage.Enabled = true;
                 listBoxUserFilters.Enabled = true;
-                readjustImageAndShow();
+                readjustImageAndShow(v_ApplyIdentityFilter);
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            bool v_ApplyIdentityFilter = true;
             this.resetColorControls();
-            this.readjustImageAndShow();
+            readjustImageAndShow(v_ApplyIdentityFilter);
         }
 
         private void listBoxUserDefinedFilters_SelectedIndexChanged(object sender, EventArgs e)
@@ -144,10 +155,9 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
             ColorMatrix chosenFilter = FiltersManager.GetFiltersList()[chosenIndex].PixelFilter;
             this.pictureBoxFilteredPicture.Image = ColorMatrixUtilities.AdjustImage(chosenFilter, this.CurrentImage);
 
-            // if the identity filter was selected
             if (chosenIndex  != 0)
             {
-                this.textBoxNewFilterName.Text = string.Empty;
+               this.textBoxNewFilterName.Text = string.Empty;
                this.disableFilterControls();
             }
             else
@@ -161,11 +171,11 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
             try
             {
                 FiltersManager.SaveFilterListToFile(FiltersManager.GetFiltersList());
-                MessageBox.Show(@"Filters Saved succesfully!", @"Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(@"Filters Saved succesfully!", @"Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception)
             {
-                MessageBox.Show(@"We couldn't save your filter data locally..Please", @"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(@"We couldn't save your filter data locally..Please check your permission settings", @"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

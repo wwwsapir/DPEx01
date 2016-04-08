@@ -9,13 +9,13 @@
 
         public string Name { get; set; }
 
-        public Filter(ColorMatrix i_Filter, string i_Name)
+        public Filter(ColorMatrix i_Filter, string i_Name = "Untitled Filter")
         {
             PixelFilter = i_Filter;
             Name = i_Name;
         }
 
-        public Filter(float[][] i_Filter, string i_Name)
+        public Filter(float[][] i_Filter, string i_Name = "Untitled Filter")
         {
             PixelFilter = new ColorMatrix(i_Filter);
             Name = i_Name;
