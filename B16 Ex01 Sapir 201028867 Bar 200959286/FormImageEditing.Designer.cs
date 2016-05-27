@@ -45,7 +45,6 @@
             this.textBoxNewFilterName = new System.Windows.Forms.TextBox();
             this.buttonAddFilter = new System.Windows.Forms.Button();
             this.listBoxUserFilters = new System.Windows.Forms.ListBox();
-            this.buttonBrowseImage = new System.Windows.Forms.Button();
             this.buttonUploadImage = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.pictureBoxFilteredPicture = new System.Windows.Forms.PictureBox();
@@ -225,19 +224,9 @@
             this.listBoxUserFilters.TabIndex = 2;
             this.listBoxUserFilters.SelectedIndexChanged += new System.EventHandler(this.listBoxUserDefinedFilters_SelectedIndexChanged);
             // 
-            // buttonBrowseImage
-            // 
-            this.buttonBrowseImage.Location = new System.Drawing.Point(394, 161);
-            this.buttonBrowseImage.Name = "buttonBrowseImage";
-            this.buttonBrowseImage.Size = new System.Drawing.Size(194, 36);
-            this.buttonBrowseImage.TabIndex = 4;
-            this.buttonBrowseImage.Text = "Load From File..";
-            this.buttonBrowseImage.UseVisualStyleBackColor = true;
-            this.buttonBrowseImage.Click += new System.EventHandler(this.buttonBrowseImage_Click);
-            // 
             // buttonUploadImage
             // 
-            this.buttonUploadImage.Location = new System.Drawing.Point(394, 203);
+            this.buttonUploadImage.Location = new System.Drawing.Point(394, 173);
             this.buttonUploadImage.Name = "buttonUploadImage";
             this.buttonUploadImage.Size = new System.Drawing.Size(194, 36);
             this.buttonUploadImage.TabIndex = 6;
@@ -262,7 +251,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(394, 77);
+            this.button2.Location = new System.Drawing.Point(394, 85);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(194, 36);
             this.button2.TabIndex = 17;
@@ -272,7 +261,7 @@
             // 
             // buttonSaveFilters
             // 
-            this.buttonSaveFilters.Location = new System.Drawing.Point(394, 119);
+            this.buttonSaveFilters.Location = new System.Drawing.Point(394, 129);
             this.buttonSaveFilters.Name = "buttonSaveFilters";
             this.buttonSaveFilters.Size = new System.Drawing.Size(194, 36);
             this.buttonSaveFilters.TabIndex = 18;
@@ -282,7 +271,7 @@
             // 
             // textBoxPostTitle
             // 
-            this.textBoxPostTitle.Location = new System.Drawing.Point(394, 245);
+            this.textBoxPostTitle.Location = new System.Drawing.Point(394, 217);
             this.textBoxPostTitle.Name = "textBoxPostTitle";
             this.textBoxPostTitle.Size = new System.Drawing.Size(194, 20);
             this.textBoxPostTitle.TabIndex = 19;
@@ -302,7 +291,6 @@
             this.Controls.Add(this.textBoxNewFilterName);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonUploadImage);
-            this.Controls.Add(this.buttonBrowseImage);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBoxFilteredPicture);
             this.MaximizeBox = false;
@@ -332,7 +320,6 @@
         private System.Windows.Forms.TrackBar trackBarRed;
         private System.Windows.Forms.ListBox listBoxUserFilters;
         private System.Windows.Forms.Button buttonAddFilter;
-        private System.Windows.Forms.Button buttonBrowseImage;
         private System.Windows.Forms.Button buttonUploadImage;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

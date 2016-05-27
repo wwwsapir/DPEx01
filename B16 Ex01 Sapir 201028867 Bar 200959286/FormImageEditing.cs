@@ -45,9 +45,10 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
         public void UseGivenPicture(Image i_ImageToEdit)
         {
             CurrentImage = i_ImageToEdit;
-            this.pictureBoxFilteredPicture.Image = this.CurrentImage;
-            this.pictureBoxFilteredPicture.Show();
+            pictureBoxFilteredPicture.Image = CurrentImage;
+            pictureBoxFilteredPicture.Show();
             listBoxUserFilters.SelectedIndex = k_FilterNone;
+            resetColorControls();
         }
 
         private void loadFiltersToListBox()
@@ -134,21 +135,6 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
                       }
                   }
              }
-        }
-
-        private void buttonBrowseImage_Click(object sender, EventArgs e)
-        {
-            bool v_ApplyIdentityFilter = true;
-            if (this.openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                this.CurrentImage = Image.FromFile(this.openFileDialog.FileName);
-                this.resetColorControls();
-                listBoxUserFilters.SelectedIndex = 0;
-                this.enableFilterControls();
-                this.buttonUploadImage.Enabled = true;
-                listBoxUserFilters.Enabled = true;
-                readjustImageAndShow(v_ApplyIdentityFilter);
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
