@@ -161,6 +161,11 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
 
         private void buttonEditImage_Click(object sender, EventArgs e)
         {
+            if (!m_CurrentPhotoIndexInAlbum.HasValue)
+            {
+                MessageBox.Show("No image to edit!");
+                return;
+            }
             if (m_FormImgaeEditingThread == null)
             {
                 m_FormImgaeEditingThread = new Thread(startFormImgaeEditing);

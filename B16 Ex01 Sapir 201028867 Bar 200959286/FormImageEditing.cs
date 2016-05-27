@@ -27,19 +27,7 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
             this.loadFiltersToListBox();
 
             // check if image was given
-            if (i_ImageToEdit != null)
-            {
-                UseGivenPicture(i_ImageToEdit);
-            }
-            else
-            {
-                // show no-image icon and disable appropriate controls
-                this.CurrentImage = new Bitmap(Resources.no_photo);
-                this.listBoxUserFilters.Enabled = false;
-                this.disableFilterControls();
-                this.buttonUploadImage.Enabled = false;
-                this.pictureBoxFilteredPicture.Show();
-            }
+            UseGivenPicture(i_ImageToEdit);
         }
 
         public void UseGivenPicture(Image i_ImageToEdit)
