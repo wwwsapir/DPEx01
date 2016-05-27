@@ -17,16 +17,19 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
 
         public User LoggedInUser { get; set; }
 
+        private const int k_FilterNone = 0;
+
         public FormImageEditing(Image i_ImageToEdit, User i_LoggedInUser)
         {
             InitializeComponent();
             LoggedInUser = i_LoggedInUser;
 
+            this.loadFiltersToListBox();
+
             // check if image was given
             if (i_ImageToEdit != null)
             {
-                CurrentImage = i_ImageToEdit;
-                this.pictureBoxFilteredPicture.Image = this.CurrentImage;
+                UseGivenPicture(i_ImageToEdit);
             }
             else
             {
@@ -35,10 +38,16 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
                 this.listBoxUserFilters.Enabled = false;
                 this.disableFilterControls();
                 this.buttonUploadImage.Enabled = false;
+                this.pictureBoxFilteredPicture.Show();
             }
+        }
 
-            this.loadFiltersToListBox();
+        public void UseGivenPicture(Image i_ImageToEdit)
+        {
+            CurrentImage = i_ImageToEdit;
+            this.pictureBoxFilteredPicture.Image = this.CurrentImage;
             this.pictureBoxFilteredPicture.Show();
+            listBoxUserFilters.SelectedIndex = k_FilterNone;
         }
 
         private void loadFiltersToListBox()

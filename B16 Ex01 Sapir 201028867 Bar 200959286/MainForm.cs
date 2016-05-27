@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Threading;
 
 using FacebookWrapper;
 using FacebookWrapper.ObjectModel;
@@ -12,6 +13,8 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
         private bool m_LoggedIn;
         private FacebookObjectCollection<Photo> m_ProfilePicturesFromAlbum;
         private int? m_CurrentPhotoIndexInAlbum = null;
+        private Thread m_FormImgaeEditingThread;
+        private FormImageEditing m_FormImageEditing;
 
         public MainForm()
         {
@@ -150,10 +153,34 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
                 @"You have " + pagesCounter + @" inactive liked pages on Facebook:";
         }
 
+        private void startFormImgaeEditing()
+        {
+            m_FormImageEditing = new FormImageEditing(this.pictureBoxProfilePicture.Image, this.m_Result.LoggedInUser);
+            m_FormImageEditing.ShowDialog();
+        }
+
         private void buttonEditImage_Click(object sender, EventArgs e)
         {
-            FormImageEditing formImageEditing = new FormImageEditing(this.pictureBoxProfilePicture.Image, this.m_Result.LoggedInUser);
-            formImageEditing.ShowDialog();
+            if (m_FormImgaeEditingThread == null)
+            {
+                m_FormImgaeEditingThread = new Thread(startFormImgaeEditing);
+                m_FormImgaeEditingThread.Start();
+            }
+            else if (!m_FormImgaeEditingThread.IsAlive)
+            {
+                m_FormImgaeEditingThread.Abort();
+                m_FormImgaeEditingThread = new Thread(startFormImgaeEditing);
+                m_FormImgaeEditingThread.Start();
+            }
+            else
+            {
+                m_FormImageEditing.Invoke(new Action(
+                        () =>
+                            {
+                                m_FormImageEditing.UseGivenPicture(pictureBoxProfilePicture.Image);
+                            }
+                                          )         );
+            }
         }
     }
 }

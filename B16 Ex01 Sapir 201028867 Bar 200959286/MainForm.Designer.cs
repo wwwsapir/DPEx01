@@ -40,6 +40,7 @@
             this.buttonNextPicture = new System.Windows.Forms.Button();
             this.labelProfilePictureDate = new System.Windows.Forms.Label();
             this.buttonEditImage = new System.Windows.Forms.Button();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfilePicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -154,6 +155,10 @@
             this.buttonEditImage.UseVisualStyleBackColor = true;
             this.buttonEditImage.Click += new System.EventHandler(this.buttonEditImage_Click);
             // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -193,6 +198,7 @@
         private System.Windows.Forms.Button buttonNextPicture;
         private System.Windows.Forms.Label labelProfilePictureDate;
         private System.Windows.Forms.Button buttonEditImage;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
     }
 }
 
