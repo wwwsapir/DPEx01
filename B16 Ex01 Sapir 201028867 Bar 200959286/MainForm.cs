@@ -11,7 +11,7 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
         private LoginResult m_Result;
         private bool m_LoggedIn;
         private FacebookObjectCollection<Photo> m_ProfilePicturesFromAlbum;
-        private int m_CurrentPhotoIndexInAlbum = 0;
+        private int? m_CurrentPhotoIndexInAlbum = null;
 
         public MainForm()
         {
@@ -42,11 +42,11 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
                     break;
                 }
             }
-
+            m_CurrentPhotoIndexInAlbum = 0;
             if (m_ProfilePicturesFromAlbum != null)
             {
                 pictureBoxProfilePicture.LoadAsync(
-                    m_ProfilePicturesFromAlbum[m_CurrentPhotoIndexInAlbum].PictureNormalURL);
+                    m_ProfilePicturesFromAlbum[m_CurrentPhotoIndexInAlbum.Value].PictureNormalURL);
             }
             else
             {
@@ -69,7 +69,13 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
         }
 
         private void changePresentedPicture(bool i_Next)
-        {   // Changes the presented profile picture to next or previous picture in the album
+        {   
+            //Check if the photos are shown yet
+            if (!m_CurrentPhotoIndexInAlbum.HasValue)
+            {
+                return;
+            }
+            // Changes the presented profile picture to next or previous picture in the album
             if (i_Next)
             {
                 ++m_CurrentPhotoIndexInAlbum;
@@ -83,7 +89,7 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
             m_CurrentPhotoIndexInAlbum = m_ProfilePicturesFromAlbum.Count + m_CurrentPhotoIndexInAlbum;
             m_CurrentPhotoIndexInAlbum = 
                 m_CurrentPhotoIndexInAlbum % m_ProfilePicturesFromAlbum.Count;  
-            Photo currentPicture = m_ProfilePicturesFromAlbum[m_CurrentPhotoIndexInAlbum];
+            Photo currentPicture = m_ProfilePicturesFromAlbum[m_CurrentPhotoIndexInAlbum.Value];
             pictureBoxProfilePicture.LoadAsync(currentPicture.PictureNormalURL);
             if (m_CurrentPhotoIndexInAlbum != 0)
             {
