@@ -15,11 +15,14 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
         private int? m_CurrentPhotoIndexInAlbum = null;
         private Thread m_FormImgaeEditingThread;
         private FormImageEditing m_FormImageEditing;
+        private FacebookObjectCollection<Page> m_InactiveLikedPages = new FacebookObjectCollection<Page>();
+        private FacebookObjectCollection<Page> m_LikedPagesCollection;
+        private int m_DaysToInactive;
 
         public MainForm()
         {
             InitializeComponent();
-            FacebookService.s_CollectionLimit = 30;
+            FacebookService.s_CollectionLimit = 15;
             m_Result = FacebookService.Login(
                                         "1085758691487251",
                                         "public_profile",
@@ -107,35 +110,34 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
 
         private void buttonButtonShowLikedPages_Click(object i_Sender, EventArgs e)
         {
-            FacebookObjectCollection<Page> likedPagesCollection = m_Result.LoggedInUser.LikedPages;
-            int numOfDaysToInactive;
-            bool isDaysTextBocValueValid = int.TryParse(this.textBoxDaysToInactive.Text, out numOfDaysToInactive);
+            m_LikedPagesCollection = m_Result.LoggedInUser.LikedPages;
+            bool isDaysTextBocValueValid = int.TryParse(this.textBoxDaysToInactive.Text, out m_DaysToInactive);
             if (!isDaysTextBocValueValid ||
-                numOfDaysToInactive < 1 ||
-                numOfDaysToInactive > 60)
+                m_DaysToInactive < 1 ||
+                m_DaysToInactive > 60)
             {
                 MessageBox.Show(@"Please insert a number between 1 to 60.");
                 return;
             }
 
-            listBoxLikedPages.Items.Clear();
-            addInactivePagedToListBox(likedPagesCollection, numOfDaysToInactive);
+            m_InactiveLikedPages.Clear();
+            buttonShowLikedPages.Enabled = false;
+            textBoxDaysToInactive.Enabled = false;
+            new Thread(addInactivePagesToList).Start();
         }
 
-        private void addInactivePagedToListBox(
-            FacebookObjectCollection<Page> i_LikedPagesCollection,
-            int i_DaysToInactive)
+        private void addInactivePagesToList()
         {
             FacebookObjectCollection<Post> latestPostsFromPage;
             int pagesCounter = 0;
-            foreach (Page likedPage in i_LikedPagesCollection)
+            foreach (Page likedPage in m_LikedPagesCollection)
             {
                 latestPostsFromPage = likedPage.Posts;
                 bool isActive = false;
                 foreach (Post pagePost in latestPostsFromPage)
                 {
                     if (pagePost.CreatedTime.GetValueOrDefault() >
-                        DateTime.Now - TimeSpan.FromDays(i_DaysToInactive))
+                        DateTime.Now - TimeSpan.FromDays(m_DaysToInactive))
                     {
                         isActive = true;
                         break;
@@ -144,14 +146,31 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
 
                 if (!isActive)
                 {
-                    listBoxLikedPages.Items.Add(likedPage.Name);
+                    m_InactiveLikedPages.Add(likedPage);
                     pagesCounter++;
                 }
             }
 
-            labelLikedPages.Text =
-                @"You have " + pagesCounter + @" inactive liked pages on Facebook:";
+            fillPagesList();
+            labelLikedPages.Invoke(new Action(() =>
+                labelLikedPages.Text =
+                @"You have " + pagesCounter + @" inactive liked pages on Facebook:"));
         }
+
+        private void fillPagesList()
+        {
+             if (!listBoxLikedPages.InvokeRequired)
+             {
+                pageBindingSource.DataSource = m_InactiveLikedPages;
+             }
+             else
+             {
+                 // In case of cross-thread operation, invoking the binding code on the listBox's thread:
+                 listBoxLikedPages.Invoke(new Action(() => 
+                     pageBindingSource.DataSource = m_InactiveLikedPages));
+             }
+        }
+
 
         private void startFormImgaeEditing()
         {
@@ -186,6 +205,19 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
                             }
                                           )         );
             }
+        }
+
+        private void buttonAdditionalPageInfo_Click(object sender, EventArgs e)
+        {
+            if (listBoxLikedPages.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a page first");
+                return;
+            }
+            AdditionalPageInfoForm additionalPageInfo = 
+                new AdditionalPageInfoForm(listBoxLikedPages.SelectedItem as Page);
+            additionalPageInfo.ShowDialog();
+            //listBoxLikedPages.SelectedItem = additionalPageInfo.Page;
         }
     }
 }

@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.buttonShowLikedPages = new System.Windows.Forms.Button();
             this.listBoxLikedPages = new System.Windows.Forms.ListBox();
+            this.pageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.labelLikedPages = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxDaysToInactive = new System.Windows.Forms.TextBox();
@@ -40,7 +42,8 @@
             this.buttonNextPicture = new System.Windows.Forms.Button();
             this.labelProfilePictureDate = new System.Windows.Forms.Label();
             this.buttonEditImage = new System.Windows.Forms.Button();
-            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.buttonAdditionalPageInfo = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pageBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfilePicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,11 +59,17 @@
             // 
             // listBoxLikedPages
             // 
+            this.listBoxLikedPages.DataSource = this.pageBindingSource;
+            this.listBoxLikedPages.DisplayMember = "Name";
             this.listBoxLikedPages.FormattingEnabled = true;
             this.listBoxLikedPages.Location = new System.Drawing.Point(239, 80);
             this.listBoxLikedPages.Name = "listBoxLikedPages";
-            this.listBoxLikedPages.Size = new System.Drawing.Size(382, 277);
+            this.listBoxLikedPages.Size = new System.Drawing.Size(314, 199);
             this.listBoxLikedPages.TabIndex = 1;
+            // 
+            // pageBindingSource
+            // 
+            this.pageBindingSource.DataSource = typeof(FacebookWrapper.ObjectModel.Page);
             // 
             // labelLikedPages
             // 
@@ -155,15 +164,22 @@
             this.buttonEditImage.UseVisualStyleBackColor = true;
             this.buttonEditImage.Click += new System.EventHandler(this.buttonEditImage_Click);
             // 
-            // openFileDialog
+            // buttonAdditionalPageInfo
             // 
-            this.openFileDialog.FileName = "openFileDialog";
+            this.buttonAdditionalPageInfo.Location = new System.Drawing.Point(559, 80);
+            this.buttonAdditionalPageInfo.Name = "buttonAdditionalPageInfo";
+            this.buttonAdditionalPageInfo.Size = new System.Drawing.Size(62, 199);
+            this.buttonAdditionalPageInfo.TabIndex = 13;
+            this.buttonAdditionalPageInfo.Text = "Additional Page Info";
+            this.buttonAdditionalPageInfo.UseVisualStyleBackColor = true;
+            this.buttonAdditionalPageInfo.Click += new System.EventHandler(this.buttonAdditionalPageInfo_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(631, 369);
+            this.ClientSize = new System.Drawing.Size(628, 285);
+            this.Controls.Add(this.buttonAdditionalPageInfo);
             this.Controls.Add(this.buttonEditImage);
             this.Controls.Add(this.labelProfilePictureDate);
             this.Controls.Add(this.buttonNextPicture);
@@ -178,6 +194,7 @@
             this.Controls.Add(this.buttonShowLikedPages);
             this.Name = "MainForm";
             this.Text = "Facebook Form Application";
+            ((System.ComponentModel.ISupportInitialize)(this.pageBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfilePicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -198,7 +215,8 @@
         private System.Windows.Forms.Button buttonNextPicture;
         private System.Windows.Forms.Label labelProfilePictureDate;
         private System.Windows.Forms.Button buttonEditImage;
-        private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.Button buttonAdditionalPageInfo;
+        private System.Windows.Forms.BindingSource pageBindingSource;
     }
 }
 

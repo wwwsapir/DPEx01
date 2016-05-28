@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdditionalPageInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdditionalPageInfoForm.Designer.cs">
+      <DependentUpon>AdditionalPageInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ColorMatrixUtilities.cs" />
     <Compile Include="Filter.cs" />
     <Compile Include="FiltersManager.cs" />
@@ -68,6 +74,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdditionalPageInfoForm.resx">
+      <DependentUpon>AdditionalPageInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormImageEditing.resx">
       <DependentUpon>FormImageEditing.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +93,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="FacebookWrapper.ObjectModel.Page.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
