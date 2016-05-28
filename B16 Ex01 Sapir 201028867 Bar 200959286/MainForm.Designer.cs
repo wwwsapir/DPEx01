@@ -178,7 +178,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(628, 285);
+            this.ClientSize = new System.Drawing.Size(638, 291);
             this.Controls.Add(this.buttonAdditionalPageInfo);
             this.Controls.Add(this.buttonEditImage);
             this.Controls.Add(this.labelProfilePictureDate);

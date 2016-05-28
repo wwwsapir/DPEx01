@@ -57,6 +57,16 @@
     <Compile Include="AdditionalPageInfoForm.Designer.cs">
       <DependentUpon>AdditionalPageInfoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdditionalPageInfoFormEnglish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdditionalPageInfoFormEnglish.Designer.cs">
+      <DependentUpon>AdditionalPageInfoFormEnglish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdditionalPageInfoFormHebrew.cs" />
+    <Compile Include="AdditionalPageInfoFormHebrew.Designer.cs">
+      <DependentUpon>AdditionalPageInfoFormHebrew.cs</DependentUpon>
+    </Compile>
     <Compile Include="ColorMatrixUtilities.cs" />
     <Compile Include="Filter.cs" />
     <Compile Include="FiltersManager.cs" />
@@ -76,6 +86,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AdditionalPageInfoForm.resx">
       <DependentUpon>AdditionalPageInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdditionalPageInfoFormEnglish.resx">
+      <DependentUpon>AdditionalPageInfoFormEnglish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdditionalPageInfoFormHebrew.resx">
+      <DependentUpon>AdditionalPageInfoFormHebrew.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormImageEditing.resx">
       <DependentUpon>FormImageEditing.cs</DependentUpon>

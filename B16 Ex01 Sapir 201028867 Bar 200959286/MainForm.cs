@@ -22,7 +22,7 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
         public MainForm()
         {
             InitializeComponent();
-            FacebookService.s_CollectionLimit = 15;
+            FacebookService.s_CollectionLimit = 30;
             m_Result = FacebookService.Login(
                                         "1085758691487251",
                                         "public_profile",
@@ -214,10 +214,10 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
                 MessageBox.Show("Please select a page first");
                 return;
             }
-            AdditionalPageInfoForm additionalPageInfo = 
-                new AdditionalPageInfoForm(listBoxLikedPages.SelectedItem as Page);
-            additionalPageInfo.ShowDialog();
-            //listBoxLikedPages.SelectedItem = additionalPageInfo.Page;
+            AdditionalPageInfoForm additionalPageInfoForm = 
+                AdditionalPageInfoForm.CreateLanguageCompatibleAdditionalPageInfoForm(
+                listBoxLikedPages.SelectedItem as Page);
+            additionalPageInfoForm.ShowDialog();
         }
     }
 }
