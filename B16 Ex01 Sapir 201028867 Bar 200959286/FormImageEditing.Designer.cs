@@ -49,8 +49,11 @@
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.pictureBoxFilteredPicture = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.buttonSaveFilters = new System.Windows.Forms.Button();
             this.textBoxPostTitle = new System.Windows.Forms.TextBox();
+            this.buttonCreateGroup = new System.Windows.Forms.Button();
+            this.buttonApplyFilter = new System.Windows.Forms.Button();
+            this.textBoxSearch = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBlue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarGreen)).BeginInit();
@@ -223,14 +226,15 @@
             this.listBoxUserFilters.Size = new System.Drawing.Size(194, 134);
             this.listBoxUserFilters.TabIndex = 2;
             this.listBoxUserFilters.SelectedIndexChanged += new System.EventHandler(this.listBoxUserDefinedFilters_SelectedIndexChanged);
+            this.listBoxUserFilters.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBoxUserFilters_MouseDoubleClick);
             // 
             // buttonUploadImage
             // 
-            this.buttonUploadImage.Location = new System.Drawing.Point(394, 173);
+            this.buttonUploadImage.Location = new System.Drawing.Point(394, 137);
             this.buttonUploadImage.Name = "buttonUploadImage";
             this.buttonUploadImage.Size = new System.Drawing.Size(194, 36);
             this.buttonUploadImage.TabIndex = 6;
-            this.buttonUploadImage.Text = "Upload To Facebook";
+            this.buttonUploadImage.Text = "Upload";
             this.buttonUploadImage.UseVisualStyleBackColor = true;
             this.buttonUploadImage.Click += new System.EventHandler(this.buttonUploadImage_Click);
             // 
@@ -251,7 +255,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(394, 85);
+            this.button2.Location = new System.Drawing.Point(394, 95);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(194, 36);
             this.button2.TabIndex = 17;
@@ -259,24 +263,51 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // buttonSaveFilters
-            // 
-            this.buttonSaveFilters.Location = new System.Drawing.Point(394, 129);
-            this.buttonSaveFilters.Name = "buttonSaveFilters";
-            this.buttonSaveFilters.Size = new System.Drawing.Size(194, 36);
-            this.buttonSaveFilters.TabIndex = 18;
-            this.buttonSaveFilters.Text = "Save Filters";
-            this.buttonSaveFilters.UseVisualStyleBackColor = true;
-            this.buttonSaveFilters.Click += new System.EventHandler(this.buttonSaveFilters_Click);
-            // 
             // textBoxPostTitle
             // 
-            this.textBoxPostTitle.Location = new System.Drawing.Point(394, 217);
+            this.textBoxPostTitle.Location = new System.Drawing.Point(394, 179);
             this.textBoxPostTitle.Name = "textBoxPostTitle";
             this.textBoxPostTitle.Size = new System.Drawing.Size(194, 20);
             this.textBoxPostTitle.TabIndex = 19;
             this.textBoxPostTitle.Text = "Photo Title";
             this.textBoxPostTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // buttonCreateGroup
+            // 
+            this.buttonCreateGroup.Location = new System.Drawing.Point(394, 293);
+            this.buttonCreateGroup.Name = "buttonCreateGroup";
+            this.buttonCreateGroup.Size = new System.Drawing.Size(97, 23);
+            this.buttonCreateGroup.TabIndex = 20;
+            this.buttonCreateGroup.Text = "Create Group";
+            this.buttonCreateGroup.UseVisualStyleBackColor = true;
+            this.buttonCreateGroup.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // buttonApplyFilter
+            // 
+            this.buttonApplyFilter.Location = new System.Drawing.Point(491, 293);
+            this.buttonApplyFilter.Name = "buttonApplyFilter";
+            this.buttonApplyFilter.Size = new System.Drawing.Size(97, 23);
+            this.buttonApplyFilter.TabIndex = 21;
+            this.buttonApplyFilter.Text = "Apply Filter";
+            this.buttonApplyFilter.UseVisualStyleBackColor = true;
+            this.buttonApplyFilter.Click += new System.EventHandler(this.buttonApplyFilter_Click);
+            // 
+            // textBoxSearch
+            // 
+            this.textBoxSearch.Location = new System.Drawing.Point(394, 267);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.Size = new System.Drawing.Size(194, 20);
+            this.textBoxSearch.TabIndex = 23;
+            this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(461, 251);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(66, 13);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Search Filter";
             // 
             // FormImageEditing
             // 
@@ -284,8 +315,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(611, 502);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textBoxSearch);
+            this.Controls.Add(this.buttonApplyFilter);
+            this.Controls.Add(this.buttonCreateGroup);
             this.Controls.Add(this.textBoxPostTitle);
-            this.Controls.Add(this.buttonSaveFilters);
             this.Controls.Add(this.buttonAddFilter);
             this.Controls.Add(this.listBoxUserFilters);
             this.Controls.Add(this.textBoxNewFilterName);
@@ -335,7 +369,10 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.Button buttonReset;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button buttonSaveFilters;
         private System.Windows.Forms.TextBox textBoxPostTitle;
+        private System.Windows.Forms.Button buttonCreateGroup;
+        private System.Windows.Forms.Button buttonApplyFilter;
+        private System.Windows.Forms.TextBox textBoxSearch;
+        private System.Windows.Forms.Label label7;
     }
 }
