@@ -9,17 +9,10 @@
         private const float k_GreenColorWeight = 0.6094f;
         private const float k_BlueColorWeight = 0.0820f;
 
-        public static ColorMatrix GetColorMatrixWithAllFilters(
-            float i_SaturationValue = 0,
-            float i_BrightnessValue = 0,
-            float i_ContrastValue = 0,
-            float i_RedValue = 0,
-            float i_GreenValue = 0,
-            float i_BlueValue = 0,
-            float i_Range = 10)
+        public static ColorMatrix GetColorMatrixWithAllFilters(FilterValues i_FilterValues)
         {
-            ColorMatrix satBrightContrMatrix = GetBrightnessSaturationContrastMatrix(i_SaturationValue, i_BrightnessValue, i_ContrastValue, i_Range);
-            ColorMatrix rgbMatrix = GetRedGreenBlueMatrix(i_RedValue, i_GreenValue, i_BlueValue, i_Range);
+            ColorMatrix satBrightContrMatrix = GetBrightnessSaturationContrastMatrix(i_FilterValues.SaturationValue, i_FilterValues.BrightnessValue, i_FilterValues.ContrastValue, i_FilterValues.Range);
+            ColorMatrix rgbMatrix = GetRedGreenBlueMatrix(i_FilterValues.RedValue, i_FilterValues.GreenValue, i_FilterValues.BlueValue, i_FilterValues.Range);
 
             // multiply the matrix and send as result
             return MultiplyColorMatrices(satBrightContrMatrix, rgbMatrix);
@@ -121,6 +114,11 @@
             }
 
             return result;
+        }
+
+        public static ColorMatrix AdjustColorMatrix(ColorMatrix i_Source, FilterValues i_FilterValues)
+        {
+            return MultiplyColorMatrices(i_Source, GetColorMatrixWithAllFilters(i_FilterValues));  
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="920560f1-559e-458c-b00a-b95e75f2ab15"
   name="ObjectModel"
@@ -740,72 +740,6 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="434ba197-34a8-4c1c-91d0-975b646ba6e5"
-            isDerived="false"
-            sourceEndRoleName="User"
-            targetEndRoleName="Gender"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="c1ec13a1-fa3c-4f0c-9232-96b100f31b36"
-              LastKnownName="Nullable&lt;User‎‎.eGender‎&gt;"
-              LastKnownLocation="Package1_0421.uml" />
-            <description>Property Gender references type Nullable&lt;User‎‎.eGender‎&gt;.</description>
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="e5f7e342-a27f-4734-aad5-0d2a446f2125"
-                  name="User"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="c4bb94f8-8327-48b4-ae70-a1f7723d17a2"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="f7e4ca73-d151-43a6-9d56-8e54bedce945"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="2435063a-db6f-4ce4-b174-b4fed012d785"
-                  name="Gender"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="be57c53b-917e-4c15-827d-eba28b4d3f97"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="61a13476-1327-4b2c-8f91-516680e53a97"
-                      name="Upper"
-                      value="1" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="d031af9c-cb41-4d3c-bce2-112777c6ce42"
             isDerived="false"
             sourceEndRoleName="User"
@@ -1269,138 +1203,6 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="a538d9c6-75b2-4a3f-a1a5-7eced0057f20"
-            isDerived="false"
-            sourceEndRoleName="User"
-            targetEndRoleName="NewsFeed"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="ec96fe00-1eb4-49fb-8259-032e61b68650"
-              LastKnownName="FacebookObjectCollection&lt;Post‎&gt;"
-              LastKnownLocation="Package4_0421.uml" />
-            <description>Property NewsFeed references type FacebookObjectCollection&lt;Post‎&gt;.</description>
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="5a3d820e-3584-4c26-8cc3-53d9fbafcfc2"
-                  name="User"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="3b678760-8314-4f46-bdad-76969861fed9"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="6ce88257-548b-459b-9edc-b969462c671e"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="ae82acf5-3594-4c05-bad5-427f416f41a4"
-                  name="NewsFeed"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="7f226035-7fda-410e-b1c5-a410c33ac959"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="6f17c94a-9cbc-4f68-b64a-5907b4218b1d"
-                      name="Upper"
-                      value="1" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="131205bc-5e55-439b-a072-c340f022895d"
-            isDerived="false"
-            sourceEndRoleName="User"
-            targetEndRoleName="OnlineStatus"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="c7dae0dc-c174-4c8a-b1b6-e8a8c56f6edb"
-              LastKnownName="Nullable&lt;User‎‎.eOnlineStatus‎&gt;"
-              LastKnownLocation="Package1_0421.uml" />
-            <description>Property OnlineStatus references type Nullable&lt;User‎‎.eOnlineStatus‎&gt;.</description>
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="3abf4318-5d4b-4319-9745-c7aa7e6ffff8"
-                  name="User"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="e773609e-726d-446c-8f4c-6db5e9f6207e"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="bb855cfe-dbf4-4716-9a9e-180e34ce12e0"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="0eeaaf16-9f1d-43d8-bdbd-ca8b3253ba68"
-                  name="OnlineStatus"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="6c014df5-a737-429c-a470-f902fd0c9fa0"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="0587f75d-a49b-48ea-9016-94c1d924ca95"
-                      name="Upper"
-                      value="1" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="35c22dd1-f909-49b8-b30d-19436eefeadb"
             isDerived="false"
             sourceEndRoleName="User"
@@ -1591,204 +1393,6 @@
                   <upperValueInternal>
                     <literalString
                       Id="4320e460-39a0-4349-8fb8-8c10ee9d6ec9"
-                      name="Upper"
-                      value="1" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="e871e23b-e2a4-412d-84ba-fbf1327d351b"
-            isDerived="false"
-            sourceEndRoleName="User"
-            targetEndRoleName="Posts"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="ec96fe00-1eb4-49fb-8259-032e61b68650"
-              LastKnownName="FacebookObjectCollection&lt;Post‎&gt;"
-              LastKnownLocation="Package4_0421.uml" />
-            <description>Property Posts references type FacebookObjectCollection&lt;Post‎&gt;.</description>
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="28b74f3f-4aba-401b-94f1-441c2ae4d880"
-                  name="User"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="f86c9f35-dec8-4710-a107-2fd8d14b6b66"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="69903da2-3acc-4496-81fa-007176e4f83d"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="d4436f48-4a6b-435d-bc4e-84844e60ed71"
-                  name="Posts"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="8ecb03b5-60ba-44d7-9282-69a46cc4e7cc"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="992fb2fb-9ab8-42b1-a12f-6057ac62c9ce"
-                      name="Upper"
-                      value="1" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="f59f400a-54ab-45cb-acd8-eed10bf9db6c"
-            isDerived="false"
-            sourceEndRoleName="User"
-            targetEndRoleName="PostsTaggedIn"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="ec96fe00-1eb4-49fb-8259-032e61b68650"
-              LastKnownName="FacebookObjectCollection&lt;Post‎&gt;"
-              LastKnownLocation="Package4_0421.uml" />
-            <description>Property PostsTaggedIn references type FacebookObjectCollection&lt;Post‎&gt;.</description>
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="120c3a47-e768-45b4-92d4-9a167b81edd8"
-                  name="User"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="8cff5de3-2f3c-4cf1-9893-60e9849750fd"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="2be6f348-5ea7-4ebe-9538-d78c5249b651"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="1ec3e62f-052c-4f87-a03d-aa57d366a6a1"
-                  name="PostsTaggedIn"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="cebc9d39-0bdf-496f-9b86-f9d5620c49fb"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="18ff739c-3f23-4c63-a1f6-8dab5f368cb1"
-                      name="Upper"
-                      value="1" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="28dc696e-a587-4d9e-8ddd-0c4f248df95f"
-            isDerived="false"
-            sourceEndRoleName="User"
-            targetEndRoleName="RelationshipStatus"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="edaa191a-ccf5-4c24-b011-d848bd4dc948"
-              LastKnownName="Nullable&lt;User‎‎.eRelationshipStatus‎&gt;"
-              LastKnownLocation="Package1_0421.uml" />
-            <description>Property RelationshipStatus references type Nullable&lt;User‎‎.eRelationshipStatus‎&gt;.</description>
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f16ce5ab-437c-4622-bee7-828a459f83c4"
-                  name="User"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="feb4c5d0-85cc-4fc2-b6bf-e94be5eb6ee8"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="3f988eb6-bd0e-4cbe-b71e-ebebdd272d8b"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="13d5bc3f-1449-45f1-90fc-b9319762b119"
-                  name="RelationshipStatus"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="19787ec8-7e05-4527-a97b-944329b0833d"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="c9c73e67-fd3d-460b-8f43-7af6273cb5eb"
                       name="Upper"
                       value="1" />
                   </upperValueInternal>
@@ -2127,34 +1731,48 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="ab8ae465-9915-4fbe-a386-dd49376d8281"
+            Id="dd7c21c1-7070-4316-96ba-af196bc820a2"
             isDerived="false"
             sourceEndRoleName="User"
-            targetEndRoleName="Photo"
+            targetEndRoleName="Gender"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="fc3cc16a-05f0-438d-97c8-ec7787baa5f7"
-              LastKnownName="Photo"
-              LastKnownLocation="Package4_0421.uml" />
+              Id="bfcd8cf4-883c-4eec-81fd-9eaa4d8c3127"
+              LastKnownName="Nullable&lt;User‎‎.eGender‎&gt;"
+              LastKnownLocation="Package1_0421.uml" />
+            <description>Property Gender references type Nullable&lt;User‎‎.eGender‎&gt;.</description>
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="65f968e8-a6b3-485a-8796-3c528a3f56b0"
+                  Id="7f71d1d3-bdb2-4850-8068-a24c798b0551"
                   name="User"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Shared"
+                  aggregation="None"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c93eecf2-98e3-4f17-b547-e7c3e8a2cadc"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="80b034b1-36d6-4bcf-b142-fe8514e7abee"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="48371b27-d298-4bf1-bc75-1a77f4c9b01e"
-                  name="Photo"
+                  Id="d0417279-4a00-4d08-845d-86803ebc3260"
+                  name="Gender"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -2164,13 +1782,80 @@
                   isComposite="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="ede535e8-4fd2-4b6d-9b1d-5240c7fa3d18"
+                      Id="1954c50f-ea72-4206-a768-dce91b68d5ea"
                       name="Lower"
-                      value="0" />
+                      value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="ac1ecde6-8877-49e9-afca-a79a1a13d66c"
+                      Id="d9c5c7a2-6428-4bb9-bc9a-01b9c3d5d638"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1d707778-2da1-45d3-b66f-4d39e0bd3938"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Languages"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="dbb3100c-0452-482e-b0b9-176d93a939bf"
+              LastKnownName="Page"
+              LastKnownLocation="Package4_0421.uml" />
+            <description>Property Languages references type Page.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="39bc7917-e62f-4a0c-8fa3-309fa7b117a1"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="89a10429-ce86-4db3-a539-39ffff7a2678"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="fe577a85-c60e-4b25-a8de-19e0407421f0"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="98062a36-1517-4130-8581-a2c27fce3fd5"
+                  name="Languages"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isOrdered="true"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b095226e-1da8-44f3-b766-9121ca0ba799"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4d2eff86-2a6f-47b4-a3e6-84fc61649631"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -2179,34 +1864,48 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="84109056-a11d-4656-8f5f-217f1fba92c0"
+            Id="2b197728-69d3-4f79-a6b7-3f8bf3874fbd"
             isDerived="false"
             sourceEndRoleName="User"
-            targetEndRoleName="Page"
+            targetEndRoleName="NewsFeed"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="dbb3100c-0452-482e-b0b9-176d93a939bf"
-              LastKnownName="Page"
+              Id="101697f9-2746-4801-838b-7a1fd1d457a1"
+              LastKnownName="FacebookObjectCollection&lt;Post‎&gt;"
               LastKnownLocation="Package4_0421.uml" />
+            <description>Property NewsFeed references type FacebookObjectCollection&lt;Post‎&gt;.</description>
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="320d175c-fe3d-413f-b367-d9fd030021a4"
+                  Id="e2030975-e569-4757-b42e-84f75b2fd76c"
                   name="User"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Shared"
+                  aggregation="None"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="384f0b1c-f533-4653-8bc7-d2b9dece7085"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f63e020d-0da5-4fc2-b14c-47dc3e9cc091"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="ae3c31ab-b092-47df-92c3-f674d64776fc"
-                  name="Page"
+                  Id="ea0ca7aa-1a8b-4492-a123-da25b261a3af"
+                  name="NewsFeed"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -2216,192 +1915,404 @@
                   isComposite="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="c071d35a-fa60-4d0f-9027-cd7571636aee"
+                      Id="dbe05cab-c10d-48b8-a588-e97f9c12b463"
                       name="Lower"
-                      value="0" />
+                      value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="14743ca7-2f37-4ffd-8709-4d7887ccdc0d"
+                      Id="a5488944-5158-4c32-bbde-018303e1ce51"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="523b9592-7593-4e0f-b381-f4141a3767a6"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="OnlineStatus"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="77f5de7c-c830-4351-a044-35a8fc7155d2"
+              LastKnownName="Nullable&lt;User‎‎.eOnlineStatus‎&gt;"
+              LastKnownLocation="Package1_0421.uml" />
+            <description>Property OnlineStatus references type Nullable&lt;User‎‎.eOnlineStatus‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="14fe4eb5-6d0b-471f-85df-dea16ca14316"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="07d26e72-eba7-4647-9148-4e7d066f4158"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d1a7538c-b38a-446e-8531-339d03357176"
                       name="Upper"
                       value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6530af09-2fe7-4543-b266-5ed0f066d494"
+                  name="OnlineStatus"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d9072c58-e2fb-46e7-bfd9-3a2b8fc9ff0f"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4fb7b932-0a73-40e7-b47c-c5ee1d73810b"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="feff4d02-8554-491e-b8ca-4dd19e0925e6"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Posts"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="101697f9-2746-4801-838b-7a1fd1d457a1"
+              LastKnownName="FacebookObjectCollection&lt;Post‎&gt;"
+              LastKnownLocation="Package4_0421.uml" />
+            <description>Property Posts references type FacebookObjectCollection&lt;Post‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="382e00f6-7689-4bdf-a23e-4f80acdd7793"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1b1fb53d-c9df-443a-b90b-298e0821525f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4c4591e0-84e3-4fe4-ad07-8debe0cb7241"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="98d68107-4879-493f-92d6-a457ad52014f"
+                  name="Posts"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="39891aee-021e-4cf3-9076-afb247aa60d5"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f37d49a3-f8cf-418c-971d-ad7a9bed814d"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8ee63bd3-60e5-470d-8568-308e4d6a643a"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="PostsTaggedIn"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="101697f9-2746-4801-838b-7a1fd1d457a1"
+              LastKnownName="FacebookObjectCollection&lt;Post‎&gt;"
+              LastKnownLocation="Package4_0421.uml" />
+            <description>Property PostsTaggedIn references type FacebookObjectCollection&lt;Post‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b498cd1-afcf-47c5-baaf-55f562a48f43"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2ce80072-2b59-4b65-a0cd-d562dbd5bdb8"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9bff3366-0ae9-40a5-90b0-5c9a60db9b77"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="18ce8e3e-d90f-49d3-9456-8b7c5ff40097"
+                  name="PostsTaggedIn"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="539dc906-063e-4774-8af3-4a67fe67b66e"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="50f8af8f-7584-4214-a396-61fdadc7aa8a"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ced2710d-b25e-46c3-9e12-cc5c9ea01d31"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="RelationshipStatus"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="485cd651-7599-4442-9197-8868fd5be752"
+              LastKnownName="Nullable&lt;User‎‎.eRelationshipStatus‎&gt;"
+              LastKnownLocation="Package1_0421.uml" />
+            <description>Property RelationshipStatus references type Nullable&lt;User‎‎.eRelationshipStatus‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5096b3cc-a4f9-4807-9c08-c62db59df547"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e0f7ece7-0109-4b44-afca-7be7c57dbf73"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6158c6ec-c555-4269-b224-ee39d1be7f6a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a070b1f7-a1d5-4acd-9c29-b0d1417edba5"
+                  name="RelationshipStatus"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="86c980e9-a195-4fd7-9246-8d5f2cb9797f"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0f0b8c69-e091-48f3-82f3-081b92782f47"
+                      name="Upper"
+                      value="1" />
                   </upperValueInternal>
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="4db8fdf7-177b-4b5f-ac67-2de0de203a90"
-            name="Albums"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="true"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="66ea3390-6c09-4cef-81d1-2f42990d3fd7"
-                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2FFbGraphApiWrapper.dll&quot; Namespace%3DFacebookWrapper.ObjectModel Type%3DUser Member%3DAlbums"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="ff34aecb-12b9-4a74-8b0f-15b75a4bf093"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="fac7c511-ac4b-4f53-bd96-02ca4ba2d0b9">
-                    <propertyInstance
-                      Id="add60eae-9500-4300-b5f8-010b67ba03b9"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b1953850-aa72-41d5-a0a4-8603521fe4a6">
-                    <propertyInstance
-                      Id="39464f32-34d6-49e6-85c0-d27d01fc2e3c"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e515dc01-399b-42b7-b37c-9e47ff776d8d">
-                    <propertyInstance
-                      Id="2eb1cd8a-12a2-4d85-b00c-f93133e26384"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="defde426-49f8-47d5-9959-9d6a8233a1fd">
-                    <propertyInstance
-                      Id="222ccf72-b550-4936-b6fd-72953a0b2592"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="7aa6fb52-8032-4dc8-9a84-1a6a3560df2c">
-                    <propertyInstance
-                      Id="b36e8f05-b887-4c97-8984-74beb444bf1a"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ccab2943-b259-43cd-81af-be2b5993669c">
-                    <propertyInstance
-                      Id="f06f39e9-4e32-42e4-8989-ee8e24683c9a"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="644e6c7b-5f93-4779-8dc3-1caf3dc041de">
-                    <propertyInstance
-                      Id="ead5c753-222c-4137-a597-8fb66df1987e"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="779549b2-6f17-4e03-abb0-ccf4fb3c4f98"
-                LastKnownName="FacebookObjectCollection&lt;Album‎&gt;"
-                LastKnownLocation="Package4_0421.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="d6a62f42-fa84-46ed-9e73-be4eab600694"
-            name="LikedPages"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="true"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="c9f10973-0134-4cf3-ac6b-03d6ee506ef6"
-                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2FFbGraphApiWrapper.dll&quot; Namespace%3DFacebookWrapper.ObjectModel Type%3DUser Member%3DLikedPages"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="6569f83a-2382-4e48-a9af-051c25c530fc"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="948b3d29-9565-4b7c-9ff5-b187ba24f1b2">
-                    <propertyInstance
-                      Id="6d5c2306-4716-42fd-a133-891a1d7e810a"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="981c7ad8-bd6a-4ab2-8f76-dfab16807a73">
-                    <propertyInstance
-                      Id="06256a08-5104-493b-89fe-f7351e5eb9c7"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="1c6fa72d-ecad-4074-a01b-c87a729f018f">
-                    <propertyInstance
-                      Id="1dba1895-3829-4271-8c6a-16d0dafe948e"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ac006ee9-10cb-4c7e-b811-773fa099ae26">
-                    <propertyInstance
-                      Id="ae0c08c3-2841-4ffe-b6e3-270dd4d79cad"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9030960d-9fbc-4788-abda-8194d9999f5e">
-                    <propertyInstance
-                      Id="38171e62-172f-4f6d-95b6-32239d315d7e"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6fa07fbe-120c-4ab6-8675-7e60190b9907">
-                    <propertyInstance
-                      Id="83474ae8-a4dd-4b4b-a6fd-51496ed3a8fe"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e957a5be-e737-494e-ae42-0bae988ca533">
-                    <propertyInstance
-                      Id="4321691b-d347-4a55-a9b1-6a17d25deb04"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="b3f040aa-aa1f-460f-bb85-df7f5a53bd0b"
-                LastKnownName="FacebookObjectCollection&lt;Page‎&gt;"
-                LastKnownLocation="Package4_0421.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="7001ec9d-8d9e-459a-98ca-a153cc65471e"
+            Id="927a4ed1-1878-40f5-9e8e-1168a31806a1"
+            name="User"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="915c022f-e580-41c0-8330-e8435c5c450f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2FFbGraphApiWrapper.dll&quot; Namespace%3DFacebookWrapper.ObjectModel Type%3DUser Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="84bba8b6-1157-434c-9417-3ac87eb00057"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45fde696-8bfc-4fd7-87ec-698937ce9ae6">
+                    <propertyInstance
+                      Id="6c7397ea-1da2-4f8f-8fb0-9fe846a2dbf9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c77a7b1-0436-46fb-a436-f42db2025477">
+                    <propertyInstance
+                      Id="a935a134-1dd5-4a09-8e43-2d1a004ecb44"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71215520-4e67-4e7c-b2b4-b892687137c4">
+                    <propertyInstance
+                      Id="166f8c70-bcf5-4502-a2c8-c0e7c80ad595"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8a413a3-0841-40f9-abe7-ad408a6a223b">
+                    <propertyInstance
+                      Id="8007bda2-577a-4343-a2f0-b9ae0fadf565"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="644f0cee-cdbb-46c6-9cdc-51c8ab86952a">
+                    <propertyInstance
+                      Id="97ea44bd-66c6-4d02-b76c-d685c542eb31"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8717e337-5e49-4d8f-8426-4895830f8a5a">
+                    <propertyInstance
+                      Id="2cedc7d0-34c6-4822-86ba-32ff099383e1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="fc0d78da-7d1c-45e1-87d8-f998a0dd5df9"
             name="PostPhoto"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="35c1cff1-7f7f-4121-af16-03d1abd32203"
+                  name="i_PhotoData"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9ed9c943-3889-42b1-a347-978c167c9f1f"
+                      LastKnownName="byte[]"
+                      LastKnownLocation="ModelingProject2.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="79e65f54-9f07-44d6-8609-5ef68a2f0541"
+                  name="i_Title"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject2.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="087026f0-5854-4c32-a088-5ece31d6e027"
+                  name="i_PrivacySettings"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject2.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -5963,6 +5874,16 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="388dcc33-c9b9-4e88-b291-a8f26b643398"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d1461ab4-eaa8-410b-892e-6ebbacaf1273"
+              LastKnownName="PostedItem"
+              LastKnownLocation="Package4_0421.uml" />
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -6452,6 +6373,16 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="7b1a242d-b7f7-47b4-952f-cd3bb89c6420"
+            isSubstitutable="false">
+            <classMoniker
+              Id="405b79ba-6fd7-41bd-8ed7-0b0dc6929cfa"
+              LastKnownName="Post"
+              LastKnownLocation="Package4_0421.uml" />
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -6568,6 +6499,16 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="c8ce7d1b-6259-4dd9-8c50-5033f2f912e0"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d1461ab4-eaa8-410b-892e-6ebbacaf1273"
+              LastKnownName="PostedItem"
+              LastKnownLocation="Package4_0421.uml" />
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -6850,6 +6791,16 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="de0e98e9-3ee4-440b-bbeb-4d28f0e3b240"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1b62ee40-0c72-4a3e-a8ac-2526e7885e1f"
+              LastKnownName="DynamicWrapper"
+              LastKnownLocation="Package4_0421.uml" />
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -8030,6 +7981,16 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="cf318c4e-a220-4ac8-b612-235ea88972e5"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1b62ee40-0c72-4a3e-a8ac-2526e7885e1f"
+              LastKnownName="DynamicWrapper"
+              LastKnownLocation="Package4_0421.uml" />
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -8365,6 +8326,16 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="844ac4ae-e0d4-4793-bffd-1c8160fd475c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d1461ab4-eaa8-410b-892e-6ebbacaf1273"
+              LastKnownName="PostedItem"
+              LastKnownLocation="Package4_0421.uml" />
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -9561,6 +9532,152 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="101697f9-2746-4801-838b-7a1fd1d457a1"
+        name="FacebookObjectCollection&lt;Post‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="db2de521-b1f5-4e1d-af36-7f48a0fb6d9f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="25baa7b4-f203-4f6d-b58f-1c05aef6a723">
+                <propertyInstance
+                  Id="12edc274-83db-4e5d-a200-fa81da6c5c9e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6f6cc6f4-e0c1-4645-8410-c561af892ffb">
+                <propertyInstance
+                  Id="b28a2476-0b95-4be4-a8e2-20c40530ad0e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ae2d6f56-2012-4e33-b6ea-35451bcb28b7">
+                <propertyInstance
+                  Id="c7bf174b-ccb3-4fdc-9d5f-5ea63e580d2e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="45a18359-2c46-4e28-ae8b-188d2bef1c81">
+                <propertyInstance
+                  Id="2e1bfa9f-bd57-40de-93e9-3082f84671ef"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4c783551-c0ce-4a57-8a49-7544785769a3">
+                <propertyInstance
+                  Id="cd9fc20f-765f-4543-a905-9bdb3d870df4"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="677c753f-60a5-4f19-bb42-18f7fe15ac5a">
+            <redefinableTemplateSignatureMoniker
+              Id="f75aaf27-9019-4a9a-b9f9-a3e32851453c"
+              LastKnownLocation="Package4_0421.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="fcc64a67-ac02-4f08-a270-6c069c269d4b">
+                  <actuals>
+                    <classMoniker
+                      Id="405b79ba-6fd7-41bd-8ed7-0b0dc6929cfa"
+                      LastKnownName="Post"
+                      LastKnownLocation="Package4_0421.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="c99cb680-d428-4cce-8afa-95a0736ba02f"
+                      LastKnownLocation="Package4_0421.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="405b79ba-6fd7-41bd-8ed7-0b0dc6929cfa"
+        name="Post"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2039fe4d-26f8-4e86-bf03-bac927e40fab"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2FFbGraphApiWrapper.dll&quot; Namespace%3DFacebookWrapper.ObjectModel Type%3DPost"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9e910858-8a92-40a9-beee-9dd904c4ca63"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2dfe9d74-fb9a-418d-a921-ffaf0e21e0e9">
+                <propertyInstance
+                  Id="fce1dbc2-9cd5-4fa4-b8dc-3945d73c9ef5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c1aa594e-c854-421d-a782-8540755610ec">
+                <propertyInstance
+                  Id="53592b84-839b-451a-8036-01507244f2df"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3036e5d0-091d-47ec-9e69-41256b641546">
+                <propertyInstance
+                  Id="e778fb8b-4adf-4de7-8d8d-8f621fe769ea"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9291143c-427a-4d08-b549-c6e7bd1d6a7d">
+                <propertyInstance
+                  Id="ebd19508-ee11-4418-9138-6defca5faf5a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5bcdf172-5c35-4773-9dd0-541cfab44cb2">
+                <propertyInstance
+                  Id="635a0c8a-e249-4d70-87bf-bfeee3281b09"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="5e091b93-0839-44d8-87bc-09c41307e5d2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="788f0d76-e9df-4508-971d-61ac1c674a9d"
+              LastKnownName="GeoPostedItem"
+              LastKnownLocation="Package4_0421.uml" />
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>

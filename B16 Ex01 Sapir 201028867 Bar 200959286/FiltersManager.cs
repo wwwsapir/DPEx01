@@ -3,13 +3,15 @@ using System.Collections.Generic;
 
 namespace B16_Ex01_Sapir_201028867_Bar_200959286
 {
+    using System.Data.OleDb;
     using System.Drawing.Imaging;
     using System.IO;
 
     public static class FiltersManager
     {
         public static string m_FilePathToSaveFilters = Directory.GetCurrentDirectory() + "/Filters.xml";
-        private static readonly List<Filter> sr_PredefinedFilterList = new List<Filter>()
+
+        private static readonly List<IFilter> sr_PredefinedFilterList = new List<IFilter>()
                                                               {
                                                                    new Filter(
                                                                       new ColorMatrix(), 
@@ -54,37 +56,40 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
                                                                             new float[] { -1, -1, -1, 0, 1 }
                                                                         },
                                                                     "Black And White"),
-                                                                    new Filter(
-                                                                    new[]
-                                                                        {
-                                                                            new float[] { 0.25f, 0.25f, 0.25f, 0, 0 },
-                                                                            new float[] { 0.5f, 0.5f, 0.5f, 0, 0 },
-                                                                            new float[] { 0.125f, 0.125f, 0.125f, 0, 0 },
-                                                                            new float[] { 0, 0, 0, 1, 0 },
-                                                                            new float[] { 0.2f, 0.2f, 0.2f, 0, 1 }
-                                                                        },
-                                                                    "Ancient"),
-                                                                    new Filter(
-                                                                    new[]
-                                                                        {
-                                                                            new float[] { 1.438f, -0.062f, -0.062f, 0, 0 },
-                                                                            new float[] { -0.122f, 1.378f, -0.122f, 0, 0 },
-                                                                            new float[] { -0.016f, -0.016f, 1.483f, 0, 0 },
-                                                                            new float[] { 0, 0, 0, 1, 0 },
-                                                                            new float[] { -0.03f, 0.05f, -0.02f, 0, 1 }
-                                                                        },
-                                                                    "Polaroid")
-                                                              };
+                                                                   
+                                                                        new Filter(
+                                                                        new[]
+                                                                            {
+                                                                                new float[] { 0.25f, 0.25f, 0.25f, 0, 0 },
+                                                                                new float[] { 0.5f, 0.5f, 0.5f, 0, 0 },
+                                                                                new float[] { 0.125f, 0.125f, 0.125f, 0, 0 },
+                                                                                new float[] { 0, 0, 0, 1, 0 },
+                                                                                new float[] { 0.2f, 0.2f, 0.2f, 0, 1 }
+                                                                            },
+                                                                        "Ancient"),
+                                                                        new Filter(
+                                                                        new[]
+                                                                            {
+                                                                                new float[] { 1.438f, -0.062f, -0.062f, 0, 0 },
+                                                                                new float[] { -0.122f, 1.378f, -0.122f, 0, 0 },
+                                                                                new float[] { -0.016f, -0.016f, 1.483f, 0, 0 },
+                                                                                new float[] { 0, 0, 0, 1, 0 },
+                                                                                new float[] { -0.03f, 0.05f, -0.02f, 0, 1 }
+                                                                            },
+                                                                        "Polaroid") 
+                                                                        };
 
-        private static List<Filter> s_filterList = null;
 
-        public static List<Filter> GetFiltersList()
+        private static List<IFilter> s_filterList = null;
+        private static FilterGroup s_filterGroup = null;
+
+        public static FilterGroup GetFiltersList()
         {
             if (s_filterList == null)
             {
                 try
                 {
-                    s_filterList = GetFilterListFromFile();
+                    s_filterList = GetFilterListFromFile().FilterList;
                 }
                 catch(Exception)
                 {
@@ -92,26 +97,31 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
                 }
             }
 
-            return s_filterList;
+            if (s_filterGroup == null)
+            {
+                s_filterGroup = new FilterGroup(s_filterList, null, "Main");
+            }
+
+            return s_filterGroup;
         }
 
-        public static List<Filter> GetFilterListFromFile()
+        public static FilterGroup GetFilterListFromFile()
         {
             System.Xml.Serialization.XmlSerializer reader =
-               new System.Xml.Serialization.XmlSerializer(typeof(List<Filter>));
+               new System.Xml.Serialization.XmlSerializer(typeof(List<IFilter>));
 
             FileStream file = File.Open(m_FilePathToSaveFilters, FileMode.Open);
 
-            List<Filter> loadedFilters = reader.Deserialize(file) as List<Filter>;
+            FilterGroup loadedIFilters = reader.Deserialize(file) as FilterGroup;
             file.Close();
 
-            return loadedFilters;
+            return loadedIFilters;
         }
 
-        public static void SaveFilterListToFile(List<Filter> i_FilterListToSave)
+        public static void SaveFilterListToFile(FilterGroup i_FilterListToSave)
         {
             System.Xml.Serialization.XmlSerializer writer =
-                new System.Xml.Serialization.XmlSerializer(typeof(List<Filter>));
+                new System.Xml.Serialization.XmlSerializer(typeof(List<IFilter>));
 
             FileStream file = File.Create(m_FilePathToSaveFilters);
 

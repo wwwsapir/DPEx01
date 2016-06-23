@@ -22,6 +22,20 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="Adapter Sequence Diagram.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Adapter Sequence Diagram.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Adapter Sequence Diagram.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Adapter.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Adapter.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Adapter.classdiagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\Package10_0421.uml">
       <SubType>Content</SubType>
     </Content>
@@ -58,12 +72,29 @@
     <Content Include="ModelDefinition\Package_0431.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package_0952.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UMLClassDiagram1.classdiagram">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UMLClassDiagram1.classdiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>UMLClassDiagram1.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="UMLClassDiagram2.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLClassDiagram2.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLClassDiagram2.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagram1.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram1.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram1.sequencediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\ModelingProject2.uml">

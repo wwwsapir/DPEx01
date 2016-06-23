@@ -174,7 +174,7 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
 
         private void startFormImgaeEditing()
         {
-            m_FormImageEditing = new FormImageEditing(this.pictureBoxProfilePicture.Image, this.m_Result.LoggedInUser);
+            m_FormImageEditing = new FormImageEditing(this.pictureBoxProfilePicture.Image, new FacebookImageUploader(this.m_Result.LoggedInUser));
             m_FormImageEditing.ShowDialog();
         }
 
