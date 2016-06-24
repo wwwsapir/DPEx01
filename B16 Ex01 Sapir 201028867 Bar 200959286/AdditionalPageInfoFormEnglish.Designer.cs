@@ -34,6 +34,7 @@
             System.Windows.Forms.Label uRLLabel;
             System.Windows.Forms.Label nameLabel;
             System.Windows.Forms.Label categoryLabel;
+            System.Windows.Forms.Label label1;
             this.pageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pageDescriptionText = new System.Windows.Forms.TextBox();
             this.imageNormalPictureBox1 = new System.Windows.Forms.PictureBox();
@@ -41,11 +42,16 @@
             this.uRLLinkLabel1 = new System.Windows.Forms.LinkLabel();
             this.nameLabel1 = new System.Windows.Forms.Label();
             this.categoryLabel1 = new System.Windows.Forms.Label();
+            this.buttonRed = new System.Windows.Forms.Button();
+            this.buttonBlue = new System.Windows.Forms.Button();
+            this.buttonGreen = new System.Windows.Forms.Button();
+            this.buttonYellow = new System.Windows.Forms.Button();
             descriptionLabel = new System.Windows.Forms.Label();
             likesCountLabel = new System.Windows.Forms.Label();
             uRLLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             categoryLabel = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pageBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageNormalPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -102,7 +108,7 @@
             // pageDescriptionText
             // 
             this.pageDescriptionText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pageBindingSource, "Description", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.pageDescriptionText.Location = new System.Drawing.Point(260, 100);
+            this.pageDescriptionText.Location = new System.Drawing.Point(260, 96);
             this.pageDescriptionText.Multiline = true;
             this.pageDescriptionText.Name = "pageDescriptionText";
             this.pageDescriptionText.ReadOnly = true;
@@ -113,7 +119,7 @@
             // imageNormalPictureBox1
             // 
             this.imageNormalPictureBox1.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.pageBindingSource, "ImageNormal", true));
-            this.imageNormalPictureBox1.Location = new System.Drawing.Point(12, 28);
+            this.imageNormalPictureBox1.Location = new System.Drawing.Point(12, 24);
             this.imageNormalPictureBox1.Name = "imageNormalPictureBox1";
             this.imageNormalPictureBox1.Size = new System.Drawing.Size(228, 197);
             this.imageNormalPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -157,11 +163,65 @@
             this.categoryLabel1.TabIndex = 32;
             this.categoryLabel1.Text = "label1";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(12, 232);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(76, 13);
+            label1.TabIndex = 33;
+            label1.Text = "Color Scheme:";
+            // 
+            // buttonRed
+            // 
+            this.buttonRed.Location = new System.Drawing.Point(95, 227);
+            this.buttonRed.Name = "buttonRed";
+            this.buttonRed.Size = new System.Drawing.Size(35, 23);
+            this.buttonRed.TabIndex = 34;
+            this.buttonRed.Text = "Red";
+            this.buttonRed.UseVisualStyleBackColor = true;
+            this.buttonRed.Click += new System.EventHandler(this.buttonRed_Click);
+            // 
+            // buttonBlue
+            // 
+            this.buttonBlue.Location = new System.Drawing.Point(136, 227);
+            this.buttonBlue.Name = "buttonBlue";
+            this.buttonBlue.Size = new System.Drawing.Size(41, 23);
+            this.buttonBlue.TabIndex = 35;
+            this.buttonBlue.Text = "Blue";
+            this.buttonBlue.UseVisualStyleBackColor = true;
+            this.buttonBlue.Click += new System.EventHandler(this.buttonBlue_Click);
+            // 
+            // buttonGreen
+            // 
+            this.buttonGreen.Location = new System.Drawing.Point(183, 227);
+            this.buttonGreen.Name = "buttonGreen";
+            this.buttonGreen.Size = new System.Drawing.Size(45, 23);
+            this.buttonGreen.TabIndex = 36;
+            this.buttonGreen.Text = "Green";
+            this.buttonGreen.UseVisualStyleBackColor = true;
+            this.buttonGreen.Click += new System.EventHandler(this.buttonGreen_Click);
+            // 
+            // buttonYellow
+            // 
+            this.buttonYellow.Location = new System.Drawing.Point(234, 227);
+            this.buttonYellow.Name = "buttonYellow";
+            this.buttonYellow.Size = new System.Drawing.Size(58, 23);
+            this.buttonYellow.TabIndex = 37;
+            this.buttonYellow.Text = "Yellow";
+            this.buttonYellow.UseVisualStyleBackColor = true;
+            this.buttonYellow.Click += new System.EventHandler(this.buttonYellow_Click);
+            // 
             // AdditionalPageInfoFormEnglish
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(550, 239);
+            this.ClientSize = new System.Drawing.Size(550, 254);
+            this.Controls.Add(this.buttonYellow);
+            this.Controls.Add(this.buttonGreen);
+            this.Controls.Add(this.buttonBlue);
+            this.Controls.Add(this.buttonRed);
+            this.Controls.Add(label1);
             this.Controls.Add(categoryLabel);
             this.Controls.Add(this.categoryLabel1);
             this.Controls.Add(nameLabel);
@@ -191,5 +251,9 @@
         private System.Windows.Forms.LinkLabel uRLLinkLabel1;
         private System.Windows.Forms.Label nameLabel1;
         private System.Windows.Forms.Label categoryLabel1;
+        private System.Windows.Forms.Button buttonRed;
+        private System.Windows.Forms.Button buttonBlue;
+        private System.Windows.Forms.Button buttonGreen;
+        private System.Windows.Forms.Button buttonYellow;
     }
 }

@@ -27,10 +27,13 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
 
         private IImageUploader m_ImageUploader;
 
+        private readonly ComplexControlPainter r_ComplexControlPainter;
+
         public FormImageEditing(Image i_ImageToEdit, IImageUploader i_ImageUploader)
         {
             m_CurrentFilterGroup = this.m_MainFilterGroup;
             m_ImageUploader = i_ImageUploader;
+            r_ComplexControlPainter = new ComplexControlPainter(this);
             InitializeComponent();
             this.loadFiltersToListBox();
 
@@ -309,6 +312,26 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
                 this.m_CurrentFilterGroup = searchResult;
                 this.loadFiltersToListBox();
             }
+        }
+
+        private void buttonRed_Click(object sender, EventArgs e)
+        {
+            r_ComplexControlPainter.ChangeToRedColorScheme();
+        }
+
+        private void buttonBlue_Click(object sender, EventArgs e)
+        {
+            r_ComplexControlPainter.ChangeToBlueColorScheme();
+        }
+
+        private void buttonGreen_Click(object sender, EventArgs e)
+        {
+            r_ComplexControlPainter.ChangeToGreenColorScheme();
+        }
+
+        private void buttonYellow_Click(object sender, EventArgs e)
+        {
+            r_ComplexControlPainter.ChangeToYellowColorScheme();
         }
     }
 }

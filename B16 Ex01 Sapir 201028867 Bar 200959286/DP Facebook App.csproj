@@ -76,9 +76,11 @@
       <DependentUpon>ChooseGroupMembers.cs</DependentUpon>
     </Compile>
     <Compile Include="ColorMatrixUtilities.cs" />
+    <Compile Include="FacebookPagesFilterer.cs" />
     <Compile Include="Filter.cs" />
     <Compile Include="FilterGroup.cs" />
     <Compile Include="FiltersManager.cs" />
+    <Compile Include="ComplexControlPainter.cs" />
     <Compile Include="ImageUploader.cs" />
     <Compile Include="FacebookImageUploader.cs" />
     <Compile Include="FilterValues.cs" />
@@ -95,6 +97,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PageLanguageEssentials.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AdditionalPageInfoForm.resx">

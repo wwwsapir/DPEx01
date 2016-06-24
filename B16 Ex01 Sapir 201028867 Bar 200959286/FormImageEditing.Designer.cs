@@ -54,6 +54,11 @@
             this.buttonApplyFilter = new System.Windows.Forms.Button();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.buttonRed = new System.Windows.Forms.Button();
+            this.buttonBlue = new System.Windows.Forms.Button();
+            this.buttonGreen = new System.Windows.Forms.Button();
+            this.buttonYellow = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBlue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarGreen)).BeginInit();
@@ -309,12 +314,66 @@
             this.label7.TabIndex = 24;
             this.label7.Text = "Search Filter";
             // 
+            // buttonRed
+            // 
+            this.buttonRed.Location = new System.Drawing.Point(394, 36);
+            this.buttonRed.Name = "buttonRed";
+            this.buttonRed.Size = new System.Drawing.Size(43, 23);
+            this.buttonRed.TabIndex = 25;
+            this.buttonRed.Text = "Red";
+            this.buttonRed.UseVisualStyleBackColor = true;
+            this.buttonRed.Click += new System.EventHandler(this.buttonRed_Click);
+            // 
+            // buttonBlue
+            // 
+            this.buttonBlue.Location = new System.Drawing.Point(441, 36);
+            this.buttonBlue.Name = "buttonBlue";
+            this.buttonBlue.Size = new System.Drawing.Size(43, 23);
+            this.buttonBlue.TabIndex = 26;
+            this.buttonBlue.Text = "Blue";
+            this.buttonBlue.UseVisualStyleBackColor = true;
+            this.buttonBlue.Click += new System.EventHandler(this.buttonBlue_Click);
+            // 
+            // buttonGreen
+            // 
+            this.buttonGreen.Location = new System.Drawing.Point(487, 36);
+            this.buttonGreen.Name = "buttonGreen";
+            this.buttonGreen.Size = new System.Drawing.Size(46, 23);
+            this.buttonGreen.TabIndex = 27;
+            this.buttonGreen.Text = "Green";
+            this.buttonGreen.UseVisualStyleBackColor = true;
+            this.buttonGreen.Click += new System.EventHandler(this.buttonGreen_Click);
+            // 
+            // buttonYellow
+            // 
+            this.buttonYellow.Location = new System.Drawing.Point(537, 36);
+            this.buttonYellow.Name = "buttonYellow";
+            this.buttonYellow.Size = new System.Drawing.Size(49, 23);
+            this.buttonYellow.TabIndex = 28;
+            this.buttonYellow.Text = "Yellow";
+            this.buttonYellow.UseVisualStyleBackColor = true;
+            this.buttonYellow.Click += new System.EventHandler(this.buttonYellow_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(391, 16);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(102, 13);
+            this.label8.TabIndex = 29;
+            this.label8.Text = "Form Color Shceme:";
+            // 
             // FormImageEditing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(611, 502);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.buttonYellow);
+            this.Controls.Add(this.buttonGreen);
+            this.Controls.Add(this.buttonBlue);
+            this.Controls.Add(this.buttonRed);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.buttonApplyFilter);
@@ -374,5 +433,10 @@
         private System.Windows.Forms.Button buttonApplyFilter;
         private System.Windows.Forms.TextBox textBoxSearch;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button buttonRed;
+        private System.Windows.Forms.Button buttonBlue;
+        private System.Windows.Forms.Button buttonGreen;
+        private System.Windows.Forms.Button buttonYellow;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -34,6 +34,7 @@
             System.Windows.Forms.Label likesCountLabel;
             System.Windows.Forms.Label nameLabel;
             System.Windows.Forms.Label uRLLabel;
+            System.Windows.Forms.Label label1;
             this.pageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.categoryLabel1 = new System.Windows.Forms.Label();
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
@@ -41,11 +42,16 @@
             this.likesCountLabel1 = new System.Windows.Forms.Label();
             this.nameLabel1 = new System.Windows.Forms.Label();
             this.uRLLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.buttonRed = new System.Windows.Forms.Button();
+            this.buttonBlue = new System.Windows.Forms.Button();
+            this.buttonGreen = new System.Windows.Forms.Button();
+            this.buttonYellow = new System.Windows.Forms.Button();
             categoryLabel = new System.Windows.Forms.Label();
             descriptionLabel = new System.Windows.Forms.Label();
             likesCountLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             uRLLabel = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pageBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageNormalPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -167,11 +173,66 @@
             this.uRLLinkLabel.TabStop = true;
             this.uRLLinkLabel.Text = "linkLabel1";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(12, 230);
+            label1.Name = "label1";
+            label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            label1.Size = new System.Drawing.Size(55, 13);
+            label1.TabIndex = 13;
+            label1.Text = "גוון צבע:";
+            // 
+            // buttonRed
+            // 
+            this.buttonRed.Location = new System.Drawing.Point(73, 225);
+            this.buttonRed.Name = "buttonRed";
+            this.buttonRed.Size = new System.Drawing.Size(45, 23);
+            this.buttonRed.TabIndex = 14;
+            this.buttonRed.Text = "אדום";
+            this.buttonRed.UseVisualStyleBackColor = true;
+            this.buttonRed.Click += new System.EventHandler(this.buttonRed_Click);
+            // 
+            // buttonBlue
+            // 
+            this.buttonBlue.Location = new System.Drawing.Point(124, 225);
+            this.buttonBlue.Name = "buttonBlue";
+            this.buttonBlue.Size = new System.Drawing.Size(45, 23);
+            this.buttonBlue.TabIndex = 15;
+            this.buttonBlue.Text = "כחול";
+            this.buttonBlue.UseVisualStyleBackColor = true;
+            this.buttonBlue.Click += new System.EventHandler(this.buttonBlue_Click);
+            // 
+            // buttonGreen
+            // 
+            this.buttonGreen.Location = new System.Drawing.Point(175, 225);
+            this.buttonGreen.Name = "buttonGreen";
+            this.buttonGreen.Size = new System.Drawing.Size(45, 23);
+            this.buttonGreen.TabIndex = 16;
+            this.buttonGreen.Text = "ירוק";
+            this.buttonGreen.UseVisualStyleBackColor = true;
+            this.buttonGreen.Click += new System.EventHandler(this.buttonGreen_Click);
+            // 
+            // buttonYellow
+            // 
+            this.buttonYellow.Location = new System.Drawing.Point(226, 225);
+            this.buttonYellow.Name = "buttonYellow";
+            this.buttonYellow.Size = new System.Drawing.Size(45, 23);
+            this.buttonYellow.TabIndex = 17;
+            this.buttonYellow.Text = "צהוב";
+            this.buttonYellow.UseVisualStyleBackColor = true;
+            this.buttonYellow.Click += new System.EventHandler(this.buttonYellow_Click);
+            // 
             // AdditionalPageInfoFormHebrew
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(510, 229);
+            this.ClientSize = new System.Drawing.Size(510, 253);
+            this.Controls.Add(this.buttonYellow);
+            this.Controls.Add(this.buttonGreen);
+            this.Controls.Add(this.buttonBlue);
+            this.Controls.Add(this.buttonRed);
+            this.Controls.Add(label1);
             this.Controls.Add(categoryLabel);
             this.Controls.Add(this.categoryLabel1);
             this.Controls.Add(descriptionLabel);
@@ -203,5 +264,9 @@
         private System.Windows.Forms.Label likesCountLabel1;
         private System.Windows.Forms.Label nameLabel1;
         private System.Windows.Forms.LinkLabel uRLLinkLabel;
+        private System.Windows.Forms.Button buttonRed;
+        private System.Windows.Forms.Button buttonBlue;
+        private System.Windows.Forms.Button buttonGreen;
+        private System.Windows.Forms.Button buttonYellow;
     }
 }

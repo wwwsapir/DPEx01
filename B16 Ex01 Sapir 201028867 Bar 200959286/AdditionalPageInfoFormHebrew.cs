@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using FacebookWrapper.ObjectModel;
 
 namespace B16_Ex01_Sapir_201028867_Bar_200959286
@@ -17,6 +10,26 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
         {
             InitializeComponent();
             pageBindingSource.DataSource = CurrentPage;
+        }
+
+        private void buttonRed_Click(object sender, EventArgs e)
+        {
+            r_ComplexControlPainter.ChangeToRedColorScheme();
+        }
+
+        private void buttonBlue_Click(object sender, EventArgs e)
+        {
+            r_ComplexControlPainter.ChangeToBlueColorScheme();
+        }
+
+        private void buttonGreen_Click(object sender, EventArgs e)
+        {
+            r_ComplexControlPainter.ChangeToGreenColorScheme();
+        }
+
+        private void buttonYellow_Click(object sender, EventArgs e)
+        {
+            r_ComplexControlPainter.ChangeToYellowColorScheme();
         }
     }
 }
