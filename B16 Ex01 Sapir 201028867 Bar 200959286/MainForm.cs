@@ -22,12 +22,12 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
         private int m_DaysToInactive;
         private int m_LikesToFilter;
         private Func<Page, bool> m_PagesFilterer;
-        private ComplexControlPainter m_ComplexControlPainter;
+        private readonly ComplexControlPainter r_ComplexControlPainter;
 
         public MainForm()
         {
             InitializeComponent();
-            m_ComplexControlPainter = new ComplexControlPainter(this);
+            r_ComplexControlPainter = new ComplexControlPainter(this);
             FacebookService.s_CollectionLimit = 30;
             r_Result = FacebookService.Login(
                                         "1085758691487251",
@@ -251,22 +251,22 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
 
         private void buttonRed_Click(object sender, EventArgs e)
         {
-            m_ComplexControlPainter.ChangeToRedColorScheme();
+            r_ComplexControlPainter.ChangeToRedColorScheme();
         }
 
         private void buttonBlue_Click(object sender, EventArgs e)
         {
-            m_ComplexControlPainter.ChangeToBlueColorScheme();
+            r_ComplexControlPainter.ChangeToBlueColorScheme();
         }
 
         private void buttonGreen_Click(object sender, EventArgs e)
         {
-            m_ComplexControlPainter.ChangeToGreenColorScheme();
+            r_ComplexControlPainter.ChangeToGreenColorScheme();
         }
 
         private void buttonYellow_Click(object sender, EventArgs e)
         {
-            m_ComplexControlPainter.ChangeToYellowColorScheme();
+            r_ComplexControlPainter.ChangeToYellowColorScheme();
         }
     }
 }
