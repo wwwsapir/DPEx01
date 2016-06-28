@@ -82,11 +82,13 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
 
         private void changePresentedPicture(bool i_Next)
         {   
-            //Check if the photos are shown yet
+
+            // Check if the photos are shown yet
             if (!m_CurrentPhotoIndexInAlbum.HasValue)
             {
                 return;
             }
+
             // Changes the presented profile picture to next or previous picture in the album
             if (i_Next)
             {
@@ -125,6 +127,7 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
                     MessageBox.Show(@"Please insert a number between 1 to 60 (days).");
                     return;
                 }
+
                 m_PagesFilterer = isPageActive; // Check inactive days strategy
             }
             else if (radioButtonLikes.Checked)
@@ -267,6 +270,11 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
         private void buttonYellow_Click(object sender, EventArgs e)
         {
             r_ComplexControlPainter.ChangeToYellowColorScheme();
+        }
+
+        private void radioButtonLikes_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -106,14 +106,17 @@ namespace B16_Ex01_Sapir_201028867_Bar_200959286
                     if (this.m_Stack.Peek().MoveNext())
                     {
                         FilterGroup nextItem = Current as FilterGroup;
-                        if (nextItem != null)
+                        while (nextItem != null) 
                         {
+                           
                             List<IFilter>.Enumerator childEnumerator = nextItem.m_FiltersList.GetEnumerator();
                             childEnumerator.MoveNext();
                             if (childEnumerator.MoveNext())
                             {
                                 this.m_Stack.Push(childEnumerator);
                             }
+
+                            nextItem = Current as FilterGroup;
                         }
                     }
                     else

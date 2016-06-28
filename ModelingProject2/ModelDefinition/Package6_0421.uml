@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="5e157f3e-432b-4a75-8b37-ffd310390422"
   name="Forms"
@@ -125,6 +125,16 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="d1cbde0f-745e-4ba8-beda-3c73884a19bb"
+            isSubstitutable="false">
+            <classMoniker
+              Id="17805e45-dea8-430e-af53-a3973ffa9726"
+              LastKnownName="Control"
+              LastKnownLocation="Package6_0421.uml" />
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -183,6 +193,16 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="11615254-4c4d-446b-a9c1-73fe55e48808"
+            isSubstitutable="false">
+            <classMoniker
+              Id="17805e45-dea8-430e-af53-a3973ffa9726"
+              LastKnownName="Control"
+              LastKnownLocation="Package6_0421.uml" />
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -357,6 +377,16 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="e0866270-d357-41ea-8080-0c8eff384c73"
+            isSubstitutable="false">
+            <classMoniker
+              Id="17805e45-dea8-430e-af53-a3973ffa9726"
+              LastKnownName="Control"
+              LastKnownLocation="Package6_0421.uml" />
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -473,6 +503,16 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="1e309e4a-fda6-4202-82d4-a3260a25e2fe"
+            isSubstitutable="false">
+            <classMoniker
+              Id="17805e45-dea8-430e-af53-a3973ffa9726"
+              LastKnownName="Control"
+              LastKnownLocation="Package6_0421.uml" />
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -835,6 +875,64 @@
                 Id="2479600c-ec73-4185-8c62-78e084e3311c">
                 <propertyInstance
                   Id="a37c3bc4-810b-47e2-b735-e676952f75c1"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="17805e45-dea8-430e-af53-a3973ffa9726"
+        name="Control"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="baf949ed-a661-428a-b2aa-5cafb9b6bdcc"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Windows.Forms.dll&quot; Namespace%3DSystem.Windows.Forms Type%3DControl"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="eccd6437-6024-4077-9731-d222f194c47b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dc2f25a2-d1ab-4438-a148-948579354262">
+                <propertyInstance
+                  Id="bab4ad3d-1b8d-4aeb-bd21-1a21caef3147"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="13948398-8155-4ab2-8c95-630928055681">
+                <propertyInstance
+                  Id="e00a7b3d-25b5-4636-b838-dcef8a81cf80"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dfc14c92-f358-47af-99aa-e44abc926447">
+                <propertyInstance
+                  Id="a3eeda0f-e1dd-4dd8-a1a1-4e6ccc746612"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9145f308-43d5-447c-8aa4-4ba1249cbc6a">
+                <propertyInstance
+                  Id="3cd1b1a5-8b4f-4caa-89b5-0b4a3a64f109"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ec8d05cf-0116-4900-888e-d80fad17f209">
+                <propertyInstance
+                  Id="c52d1c2e-8a0b-453e-8a9a-43dcef4e670e"
                   name="PackageVisibility"
                   value="internal" />
               </stereotypeInstanceHasPropertyInstances>

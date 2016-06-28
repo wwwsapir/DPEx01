@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using B16_Ex01_Sapir_201028867_Bar_200959286.Properties;
+using System.Linq;
 
 namespace B16_Ex01_Sapir_201028867_Bar_200959286
 {

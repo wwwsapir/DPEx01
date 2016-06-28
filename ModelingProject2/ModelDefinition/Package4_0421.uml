@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="920560f1-559e-458c-b00a-b95e75f2ab15"
   name="ObjectModel"
@@ -9446,12 +9446,6 @@
               <templateBindingHasTemplateParameterSubstitution>
                 <templateParameterSubstitution
                   Id="849d860c-61b8-4b77-84c9-91a382729521">
-                  <actuals>
-                    <undefinedTypeMoniker
-                      Id="320a9acf-79a6-4949-bc59-1652ded2bcff"
-                      LastKnownName="T"
-                      LastKnownLocation="Package4_0421.uml" />
-                  </actuals>
                   <formal>
                     <classifierTemplateParameterMoniker
                       Id="c99cb680-d428-4cce-8afa-95a0736ba02f"
@@ -9463,18 +9457,6 @@
           </templateBinding>
         </signatures>
       </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <undefinedType
-        Id="320a9acf-79a6-4949-bc59-1652ded2bcff"
-        name="T">
-        <referencesInternal>
-          <reference
-            Id="74d48db2-2dcf-43dd-88db-c126d5ea43b5"
-            handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2FFbGraphApiWrapper.dll&quot; Namespace%3DFacebookWrapper.ObjectModel Type%3DFacebookObject Member%3D(Name%3DRetrieveCollection GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2FFbGraphApiWrapper.dll&quot; Namespace%3DFacebookWrapper.ObjectModel Type%3D(Name%3DFacebookObjectCollection GenericParameterCount%3D1 GenericArguments%3D[(ParameterIdentifier%3D0)]) ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2FFbGraphApiWrapper.dll&quot; Namespace%3DFacebookWrapper.ObjectModel Type%3D(Name%3DeLoadOptions ParentType%3DDynamicWrapper))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3D0"
-            tag="ViewCode" />
-        </referencesInternal>
-      </undefinedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class

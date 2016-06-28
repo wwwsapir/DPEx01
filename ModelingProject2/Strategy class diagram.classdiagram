@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ce313e2c-7466-4cbb-97c7-67f7b5f3552b" name="UMLClassDiagram4" linkedPackageId="ff0c3511-8dae-4a25-8645-e4f8a8a13cb0" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="d1f10422-4314-4698-8592-f73c878ed264">
+      <elementDefinition Id="23e2556c-5b65-4a32-9f50-ddda68f4e91f" />
+      <body>m_FilteredLikedPages = facebookPagesFilterer.FilterPagesCollection(m_LikedPagesCollection);</body>
+      <annotatedElements>
+        <classMoniker Id="0b9ef6ac-e320-4dfc-9658-88010b448fd1" LastKnownName="MainForm" />
+      </annotatedElements>
+    </comment>
+    <comment Id="af4590af-b973-42f0-8bc3-892993a1407f">
+      <elementDefinition Id="26393287-c717-4dd5-8b48-b80030bf23ee" />
+      <body>All Strategy concrete items are actually delegates:
+Func&lt;Page, bool&gt;
+</body>
+      <annotatedElements>
+        <classMoniker Id="5cc8f226-a274-47ba-8973-4da71e233c62" LastKnownName="EnglishFilter" />
+        <classMoniker Id="928b6aef-7c80-4977-9beb-88d64c25c805" LastKnownName="HebrewFilter" />
+        <classMoniker Id="58a96a59-719d-4b3f-86dc-cbbd670f22a3" LastKnownName="LikesFilter" />
+        <classMoniker Id="51331ca8-5c7f-470d-9036-ef1c24ded0df" LastKnownName="InactivePageFilter" />
+      </annotatedElements>
+    </comment>
+    <comment Id="0f83c4c3-0101-4344-b528-74de857371e5">
+      <elementDefinition Id="12b8f6a6-32d1-4f3e-85bf-667e42ef3ab5" />
+      <body>Strategy object IPagesFilterer is actually implemented using delegates.
+MainForm is holding a reference to Func&lt;Page, bool&gt; instead of IpagesFilterer
+</body>
+      <annotatedElements>
+        <classMoniker Id="0b9ef6ac-e320-4dfc-9658-88010b448fd1" LastKnownName="MainForm" />
+        <interfaceMoniker Id="443abffb-05d3-4631-9d5a-686fe23c8b62" LastKnownName="IPagesFilterer" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="75450c3c-6c3f-4f68-9993-be9f89ff579d">
+      <profileInstance Id="10357b09-977c-4968-a2fa-63071c4c6b21" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="566c07ab-fa8c-4768-beb2-d9f1072bc6bd">
+      <profileInstance Id="c655553d-d7a9-45c0-9289-46a367be65fa" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f3156599-bf14-46e6-a0e8-37c948256a94">
+      <profileInstance Id="4270d501-6fe2-4a0c-ac94-9b987519b7be" name="CSharpProfile">
+        <elementDefinition Id="855fd3ac-471b-4780-b994-36c50ab7dd90" />
+      </profileInstance>
+      <elementDefinition Id="9d5ad13b-0f95-4e76-b37d-4dd9318096cd" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9ed7d28c-cf16-4086-b5af-70ef5fb01183" name="FacebookPagesFilterer" visibility="Package" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="784dfd4d-6420-45de-8002-3b332f0bc115" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DFacebookPagesFilterer" tag="ViewCode">
+            <elementDefinition Id="04000acd-90f5-46f6-beb9-8e003c7cec2c" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="cb924d3a-8aa9-427e-8c3f-3de73b0e456d" name="class" profile="CSharpProfile">
+            <elementDefinition Id="5c5dbaba-9e60-4c3e-a71f-9e9baa0f3aa8" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="08cea42e-a959-4b65-855b-948da66c2602">
+                <propertyInstance Id="7a957507-16c7-4cb8-b86c-fa76afc87256" name="ClrAttributes">
+                  <elementDefinition Id="ae1d7e6f-f066-4bba-bb7f-1185e5e8c660" />
+                </propertyInstance>
+                <elementDefinition Id="4188f953-67c4-4225-8a5a-9c930f2d6b24" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="36bdd396-97f9-41c4-a706-c46f14147583">
+                <propertyInstance Id="20f1b3c0-1507-4b1a-b31d-2de68a2347c3" name="IsPartial" value="false">
+                  <elementDefinition Id="efcdb50d-e63e-4aeb-84eb-b4a4e5b189ce" />
+                </propertyInstance>
+                <elementDefinition Id="1eb31071-0865-4b52-9306-ad323ac20ce4" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="79209c2d-25fb-469c-999a-ccb17b3ce59f">
+                <propertyInstance Id="8d24a583-5167-4568-8a3c-34e21e05ac33" name="IsStatic" value="False">
+                  <elementDefinition Id="c8d994cc-6261-4e7a-b1b8-bb1bf1c60a27" />
+                </propertyInstance>
+                <elementDefinition Id="9eec23ab-0e0d-4ab7-aae2-5acf4f8ff5c0" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="a8597adc-7231-4dfd-9ca4-8a332bb62e19">
+                <propertyInstance Id="10154505-f158-4cff-a78c-d18e50008a47" name="IsUnsafe" value="false">
+                  <elementDefinition Id="821c2fa3-a7b3-4881-b528-a308b76051d2" />
+                </propertyInstance>
+                <elementDefinition Id="e5da7d21-a12d-473e-a022-4de8a092429d" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1ba08e99-a51f-4e3c-a562-df97069e9b1f">
+                <propertyInstance Id="cfb322f9-b9af-4d7b-aafb-8ef650e5a208" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="f1e5536b-ce64-4347-8e4e-83c51dcb5719" />
+                </propertyInstance>
+                <elementDefinition Id="20cd1a85-5a1a-4688-9b45-30d4279295ab" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="42ddc78d-52f8-4b3d-9fc5-90c3d48112e5" />
+        <targetEnds>
+          <association Id="ad34c6a5-6598-463a-8ca1-f58adcc3ec9d" isDerived="false" sourceEndRoleName="FacebookPagesFilterer" targetEndRoleName="IPagesFilterer" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="443abffb-05d3-4631-9d5a-686fe23c8b62" LastKnownName="IPagesFilterer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0fe81116-c4cf-4da5-adfa-acffac68a5fc" name="FacebookPagesFilterer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="19c181a5-89dc-4799-8493-7a98c084cf39" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="39010ee0-eeba-4876-8946-cc4eb3c0d69d" name="IPagesFilterer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="57949903-df02-48ec-96bd-a5d77ca530dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1ae6afa3-7ff5-41c7-b9de-3fd7cd8dcbba" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="b08e397c-135a-4580-a095-8214dcef3481" name="FilterPagesCollection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2810b666-7c19-4dad-bfc2-e09519b4904a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1e5d325e-cfb3-483f-b62f-3b60ef31051b" direction="Return" isUnique="false">
+                  <elementDefinition Id="7c128e23-8da9-4df8-870b-0d9cb678bd7f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fa31dc5d-e3e8-47f1-a6dc-eaba0b7d29df" LastKnownName="Collection&lt;Page&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2191e5b4-7177-4968-97e1-95f812d73b98" name="Collection&lt;Page&gt;" direction="In" isUnique="false">
+                  <elementDefinition Id="8f923fe9-78d4-4a4a-982c-98da21e0780a" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0b9ef6ac-e320-4dfc-9658-88010b448fd1" name="MainForm" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="78491e06-4135-4a55-9fae-6ad240c2b170" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fbarsasson%2FSource%2FRepos%2FDPEx01%2FB16 Ex01 Sapir 201028867 Bar 200959286%2Fbin%2FDebug%2FB16 Ex01 Sapir 201028867 Bar 200959286.exe&quot; Namespace%3DB16_Ex01_Sapir_201028867_Bar_200959286 Type%3DMainForm" tag="ViewCode">
+            <elementDefinition Id="3a555bdb-0217-470f-81f3-063260456f4a" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="ba9c9c81-3236-4750-807b-6e83bbd3698e" name="class" profile="CSharpProfile">
+            <elementDefinition Id="09dc2bee-50a6-4095-9d06-da303edb576d" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e4c56409-ea25-4bab-a5fa-0b87287b587e">
+                <propertyInstance Id="49c6650d-9e6e-4aeb-b05b-b343c678ccdb" name="ClrAttributes">
+                  <elementDefinition Id="c9e15ba0-58c1-49b6-b942-ebe6c38069b3" />
+                </propertyInstance>
+                <elementDefinition Id="d13445c3-5929-4c4e-9be5-99b4a19407c8" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="9021b1df-e957-48cc-968c-64de7d6527ed">
+                <propertyInstance Id="53843185-7141-444e-8c3f-6e34ef38b4bf" name="IsPartial" value="false">
+                  <elementDefinition Id="bd3a55f8-940b-4aef-a5bf-a7cf756bef09" />
+                </propertyInstance>
+                <elementDefinition Id="194361a6-ece5-4464-b11f-9665e4b09265" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="d6d46f66-2a6a-41b5-90b4-1d824d8cee29">
+                <propertyInstance Id="2e1397f9-e8a8-4130-aefb-ae2d5710bd63" name="IsStatic" value="False">
+                  <elementDefinition Id="cab3af35-94bc-4215-818f-7510fb7675f9" />
+                </propertyInstance>
+                <elementDefinition Id="2c375912-0348-4042-86f4-9d6bd9a82efa" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="7af72d86-72fd-415c-83ff-386cd7a57402">
+                <propertyInstance Id="20f83ff3-1655-40a7-a8b0-d89f087e07a7" name="IsUnsafe" value="false">
+                  <elementDefinition Id="dc569d7d-a342-4189-8894-a85c4f402e12" />
+                </propertyInstance>
+                <elementDefinition Id="1f1de297-1c70-4254-bc95-f63182fefbaf" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3bd9cbc2-3125-488d-9525-90380997fcdd">
+                <propertyInstance Id="1953e88f-888b-4a34-baad-d8c9277c2ad4" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="9e218c46-71f3-46b6-bc7c-c1e85e99833e" />
+                </propertyInstance>
+                <elementDefinition Id="6900bc22-679f-4b6a-9503-7b091be76129" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="a570efc2-6367-447f-891a-9aca7a7e096b" />
+        <suppliersInternal>
+          <dependency Id="e535d506-a1df-4e0e-a414-a769c45fa301">
+            <classMoniker Id="9ed7d28c-cf16-4086-b5af-70ef5fb01183" LastKnownName="FacebookPagesFilterer" />
+            <elementDefinition Id="c79b9bf8-e12e-4068-862f-46c5267f73ce" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="6214c7e2-883a-4d18-aa78-a95dcb8100ee" isDerived="false" sourceEndRoleName="MainForm" targetEndRoleName="IPagesFilterer" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="443abffb-05d3-4631-9d5a-686fe23c8b62" LastKnownName="IPagesFilterer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e6df3e20-a789-4717-be83-66a2791c0ed8" name="MainForm" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b719c6e6-f227-4007-a0ec-b7a7191eed56" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d12e0e35-3ef2-49ee-b1c4-b7572825626d" name="IPagesFilterer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="303ffdfb-3cf3-4bb8-9933-bf49d292221c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b552fe39-8165-4e49-9a16-b8a3c02c8804" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3e930504-eb5d-47b1-9768-467850fbc178" name="m_PagesFilterer" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9a4cc8b4-0456-42cf-836c-0b60bb2064e7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="22c6b9f7-2919-40ce-a4ba-3a6711b6b66f" LastKnownName="IPagesFilterer" />
+            </type_NamedElement>
+          </property>
+          <property Id="4ffaa47e-1beb-4785-8e56-eeb0d5ae2810" name="m_LikedPagesCollection" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="385d90d9-c15d-44e5-9fc6-425d9206045d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4183875a-1a26-4e11-83ed-31cc9989b0da" LastKnownName="Collection&lt;Page&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="e0f7cf86-543e-42a2-99c9-27ef21d7831f" name="m_FilteredLikedPages" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5e629d93-a23e-4d9d-8fef-a25e8da35924" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="07e2c644-56a8-4fd2-bd72-b7675a140843" LastKnownName="Collection&lt;Page&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="35aaf578-7075-42d8-ab62-5a676fd6993b" name="ButtonShowLikedPages_Click" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c4e25ab8-e3b3-49c3-b9a6-356329db4976" />
+          </operation>
+          <operation Id="a430d28b-5435-4a3f-8b2f-b3e1bc623804" name="addFilteredPagesToList" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0eedb0ce-c86a-4d8e-9a9b-28e2e90c9c78" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="443abffb-05d3-4631-9d5a-686fe23c8b62" name="IPagesFilterer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2b191cda-2177-4616-8e46-41175a9fa99e" />
+        <ownedOperations>
+          <operation Id="a4339e9c-5250-4166-9e30-a91264d73f18" name="PageFilter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="002390c9-55be-4697-a757-3e389b14b669" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="65666fe5-4eea-4158-8b2c-c8dbb7133cbb" name="Page" direction="In" isUnique="false">
+                  <elementDefinition Id="efcae00d-03d4-4997-86eb-2d18924fabd2" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a1633690-e830-468d-ae54-07fb2960a31f" direction="Return" isUnique="false">
+                  <elementDefinition Id="3f1d1341-0e9c-4310-a7f0-e5b439dd7990" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dccf67db-6ce7-4c6a-83b1-ad9681c154f5" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="928b6aef-7c80-4977-9beb-88d64c25c805" name="HebrewFilter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e9b7c111-bde1-4371-8776-fa4d0bbcde9b" />
+        <suppliersInternal>
+          <interfaceRealization Id="c845e97a-9a82-4e5a-927f-f40733396674">
+            <interfaceMoniker Id="443abffb-05d3-4631-9d5a-686fe23c8b62" LastKnownName="IPagesFilterer" />
+            <elementDefinition Id="437c1a1b-8808-4d78-93bd-f6bb5494e191" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="8b17a7ec-1880-4215-90ce-12eb7370e01a" name="PageFilter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="60703521-71e1-4e68-bcb6-4d3c42e7a402" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="396bd45c-6433-4cc0-a46e-4297d6930aed" name="Page" direction="In" isUnique="false">
+                  <elementDefinition Id="14ec4acb-5b01-4752-9cd7-0499495b1dfa" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="035a5393-3a4d-4300-b072-c24bf6eb9413" direction="Return" isUnique="false">
+                  <elementDefinition Id="74cc365e-b603-41b0-ad9c-854d72cff3fc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dccf67db-6ce7-4c6a-83b1-ad9681c154f5" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="58a96a59-719d-4b3f-86dc-cbbd670f22a3" name="LikesFilter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b60f7144-320c-4b70-9bad-74ed1ac0fdbd" />
+        <suppliersInternal>
+          <interfaceRealization Id="a950949a-1b4e-4ade-bc7b-2a7a052beb1f">
+            <interfaceMoniker Id="443abffb-05d3-4631-9d5a-686fe23c8b62" LastKnownName="IPagesFilterer" />
+            <elementDefinition Id="794ab6fb-75c0-4850-b4cd-ee73a62c3b45" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="8d8d5e78-d633-4f35-b875-dccaa943171c" name="PageFilter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="925a020e-3d67-4ed2-a52f-b3205d0d75a9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e7ee7f5a-ccb2-4acb-842b-86f358ab4668" name="Page" direction="In" isUnique="false">
+                  <elementDefinition Id="6b2fc757-353f-40e4-a196-b900ca7a51b7" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="49e3fd32-fc5b-4c43-a12f-8e59b3d975d1" direction="Return" isUnique="false">
+                  <elementDefinition Id="7dacaf93-ab93-4402-8713-72a2607ca893" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dccf67db-6ce7-4c6a-83b1-ad9681c154f5" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="51331ca8-5c7f-470d-9036-ef1c24ded0df" name="InactivePageFilter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3982be48-b7f6-40ce-9935-a9efe06c5976" />
+        <suppliersInternal>
+          <interfaceRealization Id="154c0ad7-24d2-4eb5-aef8-2130f940b936">
+            <interfaceMoniker Id="443abffb-05d3-4631-9d5a-686fe23c8b62" LastKnownName="IPagesFilterer" />
+            <elementDefinition Id="9343e927-f02c-49d5-83e3-9633e0d33368" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="8420912f-b614-4514-8968-c605efa4d51f" name="PageFilter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fb5ddec4-430b-467c-99e9-c86de3ac4c29" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5495608e-834f-4448-a507-b5ab27326035" name="Page" direction="In" isUnique="false">
+                  <elementDefinition Id="8eee014d-d3b6-4f77-bf55-f97f943f26c2" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="88a2c1f2-975d-4925-890b-8c9c17e935a2" direction="Return" isUnique="false">
+                  <elementDefinition Id="9265d02e-44b7-4c3c-839c-5ddb1ef42202" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dccf67db-6ce7-4c6a-83b1-ad9681c154f5" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="dccf67db-6ce7-4c6a-83b1-ad9681c154f5" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="8551ac96-63fd-4173-8097-3b2ac6425b65" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5cc8f226-a274-47ba-8973-4da71e233c62" name="EnglishFilter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c93055c6-b1b9-4d49-9136-b2206ef6acd5" />
+        <suppliersInternal>
+          <interfaceRealization Id="88b6dcca-88f6-4390-84ad-efb570b46d27">
+            <interfaceMoniker Id="443abffb-05d3-4631-9d5a-686fe23c8b62" LastKnownName="IPagesFilterer" />
+            <elementDefinition Id="d54c7660-6ded-4408-b171-fd6246974d9e" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="fef936a7-cc7c-44b4-9e70-bdef23472f31" name="PageFilter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9acf8910-ec4b-47c9-95fe-20496ace3523" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="51abac0d-7ce4-45c4-b94e-b217fd2f66e9" name="Page" direction="In" isUnique="false">
+                  <elementDefinition Id="62f976b1-a77d-420c-9380-71d0174f6494" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="384ca30b-ac7a-4106-8a08-ced273d79a2c" direction="Return" isUnique="false">
+                  <elementDefinition Id="6a6af433-65f0-4b45-8c30-100e5792ceb2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dccf67db-6ce7-4c6a-83b1-ad9681c154f5" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="22c6b9f7-2919-40ce-a4ba-3a6711b6b66f" name="IPagesFilterer" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject2::IPagesFilterer">
+        <elementDefinition Id="2b191cda-2177-4616-8e46-41175a9fa99e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fa31dc5d-e3e8-47f1-a6dc-eaba0b7d29df" name="Collection&lt;Page&gt;" isAbstract="false" isLeaf="false" cachedFullName="Collection&lt;Page&gt;">
+        <elementDefinition Id="c42a5606-6926-4692-a78a-50af0e6cc248" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="07e2c644-56a8-4fd2-bd72-b7675a140843" name="Collection&lt;Page&gt;" isAbstract="false" isLeaf="false" cachedFullName="Collection&lt;Page&gt;">
+        <elementDefinition Id="c42a5606-6926-4692-a78a-50af0e6cc248" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4183875a-1a26-4e11-83ed-31cc9989b0da" name="Collection&lt;Page&gt;" isAbstract="false" isLeaf="false" cachedFullName="Collection&lt;Page&gt;">
+        <elementDefinition Id="c42a5606-6926-4692-a78a-50af0e6cc248" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="ff0c3511-8dae-4a25-8645-e4f8a8a13cb0" name="ModelingProject2">
+    <elementDefinition Id="cd9a1ab9-c8e1-4d86-aaa2-d58fb1d5b522" />
+  </package>
+</logicalClassDesignerModel>

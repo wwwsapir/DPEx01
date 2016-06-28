@@ -206,6 +206,7 @@
             this.radioButtonLikes.TabIndex = 18;
             this.radioButtonLikes.Text = "With more than";
             this.radioButtonLikes.UseVisualStyleBackColor = true;
+            this.radioButtonLikes.CheckedChanged += new System.EventHandler(this.radioButtonLikes_CheckedChanged);
             // 
             // label1
             // 
