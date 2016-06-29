@@ -115,9 +115,6 @@
     <EmbeddedResource Include="FormImageEditing.resx">
       <DependentUpon>FormImageEditing.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormImageEditing_textBoxSearch_TextChanged.sequencediagram.layout">
-      <DependentUpon>FormImageEditing_textBoxSearch_TextChanged.sequencediagram</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,7 +129,6 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="FacebookWrapper.ObjectModel.Page.datasource" />
-    <None Include="FormImageEditing_textBoxSearch_TextChanged.sequencediagram" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
